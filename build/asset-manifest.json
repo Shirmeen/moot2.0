@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/moot2.0/static/css/main.ddc34ec2.css",
+    "main.js": "/moot2.0/static/js/main.f136663f.js",
+    "index.html": "/moot2.0/index.html",
+    "main.ddc34ec2.css.map": "/moot2.0/static/css/main.ddc34ec2.css.map",
+    "main.f136663f.js.map": "/moot2.0/static/js/main.f136663f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ddc34ec2.css",
+    "static/js/main.f136663f.js"
+  ]
+}
