@@ -23,11 +23,11 @@ function About() {
   return (
     <section id="about" className="about">
       <div className="container">
-        <h2>About the Event</h2>
-        <p>Crescent Academia Moot 2.0 is a prestigious academic event organized by Crescent Girls, bringing together students and professionals for an enriching experience focused on intellectual discourse, debate, and networking.</p>
+        <h2 className="animate-down">About the Event</h2>
+        <p className="animate-up delay-1">Crescent Academia Moot 2.0 is a prestigious academic event organized by Crescent Girls, bringing together students and professionals for an enriching experience focused on intellectual discourse, debate, and networking.</p>
         <div className="highlights">
-          {highlights.map((highlight) => (
-            <div key={highlight.id} className="highlight-card">
+          {highlights.map((highlight, index) => (
+            <div key={highlight.id} className={`highlight-card animate-zoom delay-${index + 1}`}>
               <h3>{highlight.title}</h3>
               <p>{highlight.description}</p>
             </div>

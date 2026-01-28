@@ -5,9 +5,9 @@ function Contact() {
   return (
     <section id="contact" className="contact">
       <div className="container">
-        <h2>Get in Touch</h2>
-        <p>For more information about Crescent Academia Moot 2.0, please reach out to the organizers.</p>
-        <div className="contact-info">
+        <h2 className="animate-down">Get in Touch</h2>
+        <p className="animate-up delay-1">For more information about Crescent Academia Moot 2.0, please reach out to the organizers.</p>
+        <div className="contact-info animate-zoom delay-2">
           <p>Email: <a href="mailto:info@crescentacademia.com">info@crescentacademia.com</a></p>
           <p>Organization: Crescent Girls</p>
           <p>Location: Lahore, Punjab, Pakistan</p>

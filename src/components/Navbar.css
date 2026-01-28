@@ -1,13 +1,15 @@
 .navbar {
-  background-color: #0d3b52 !important;
+  background: rgba(13, 59, 82, 0.95) !important;
+  backdrop-filter: blur(10px);
   color: #ffffff;
-  padding: 1.2rem 0;
+  padding: 1rem 0;
   position: sticky;
   top: 0;
-  z-index: 100;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  border-bottom: 3px solid #00a9b5 !important;
+  z-index: 1000;
+  box-shadow: var(--shadow-md);
+  border-bottom: 2px solid var(--secondary-color) !important;
 }
+
 
 .nav-content {
   display: flex;
@@ -26,8 +28,18 @@
 
 .logo-text {
   color: var(--white);
-  font-size: 1.3rem;
+  font-size: 1.5rem;
+  font-family: 'Outfit', sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background: linear-gradient(to right, var(--white), var(--secondary-color));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
 }
+
+
 
 .nav-menu {
   display: flex;

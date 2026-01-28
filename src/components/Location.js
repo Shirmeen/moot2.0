@@ -5,9 +5,9 @@ function Location() {
   return (
     <section id="location" className="location">
       <div className="container">
-        <h2>Venue Location</h2>
+        <h2 className="animate-down">Venue Location</h2>
         <div className="location-content">
-          <div className="map-container">
+          <div className="map-container animate-left delay-1">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3319.9644947436584!2d74.32250099999999!3d31.5340203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39190523aa5dd1db%3A0xf2ae04c5cc27920c!2sThe%20Crescent%20College%20Lahore.%20Girls%20Campus!5e0!3m2!1sen!2s!4v1706460000000"
               width="100%"
@@ -19,7 +19,7 @@ function Location() {
               title="The Crescent College Lahore"
             ></iframe>
           </div>
-          <div className="location-info">
+          <div className="location-info animate-right delay-2">
             <h3>The Crescent College Lahore</h3>
             <p className="campus-name">Girls Campus</p>
             <p className="address">Lahore, Punjab, Pakistan</p>

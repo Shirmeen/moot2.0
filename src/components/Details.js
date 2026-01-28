@@ -40,10 +40,10 @@ function Details() {
   return (
     <section id="details" className="details">
       <div className="container">
-        <h2>Event Details</h2>
+        <h2 className="animate-down">Event Details</h2>
         <div className="details-grid">
-          {details.map((detail) => (
-            <div key={detail.id} className="detail-item">
+          {details.map((detail, index) => (
+            <div key={detail.id} className={`detail-item animate-left delay-${index + 1}`}>
               <h3>{detail.title}</h3>
               {detail.items.map((item, idx) => (
                 <p key={idx}>
