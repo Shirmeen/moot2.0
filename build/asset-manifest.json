@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/moot2.0/static/css/main.0866c621.css",
-    "main.js": "/moot2.0/static/js/main.7284ea4b.js",
+    "main.css": "/moot2.0/static/css/main.35b545b5.css",
+    "main.js": "/moot2.0/static/js/main.c2360a32.js",
     "index.html": "/moot2.0/index.html",
-    "main.0866c621.css.map": "/moot2.0/static/css/main.0866c621.css.map",
-    "main.7284ea4b.js.map": "/moot2.0/static/js/main.7284ea4b.js.map"
+    "main.35b545b5.css.map": "/moot2.0/static/css/main.35b545b5.css.map",
+    "main.c2360a32.js.map": "/moot2.0/static/js/main.c2360a32.js.map"
   },
   "entrypoints": [
-    "static/css/main.0866c621.css",
-    "static/js/main.7284ea4b.js"
+    "static/css/main.35b545b5.css",
+    "static/js/main.c2360a32.js"
   ]
 }
