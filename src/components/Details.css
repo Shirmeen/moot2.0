@@ -19,18 +19,36 @@
 .detail-item {
   background-color: var(--white);
   padding: 30px;
-  border-radius: 15px;
+  border-radius: 20px;
   border-left: 6px solid var(--secondary-color);
-  box-shadow: var(--shadow-sm);
-  transition: all 0.4s ease;
+  box-shadow: var(--shadow-md);
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+  overflow: hidden;
 }
 
 .detail-item:hover {
-  transform: translateX(10px);
-  box-shadow: var(--shadow-lg);
+  transform: translateY(-12px) scale(1.03);
+  box-shadow: 0 20px 40px rgba(0, 77, 44, 0.15);
   border-left-color: var(--accent-color);
-  background: linear-gradient(to right, var(--white), #f0f7f7);
+  background: white;
 }
+
+.detail-item::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.05), transparent);
+  transition: 0.5s;
+}
+
+.detail-item:hover::after {
+  left: 100%;
+}
+
 
 .detail-item h3 {
   color: var(--primary-color);

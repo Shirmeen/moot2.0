@@ -43,7 +43,7 @@ function Details() {
         <h2 className="animate-down">Event Details</h2>
         <div className="details-grid">
           {details.map((detail, index) => (
-            <div key={detail.id} className={`detail-item animate-left delay-${index + 1}`}>
+            <div key={detail.id} className={`detail-item animate-zoom delay-${index + 1}`}>
               <h3>{detail.title}</h3>
               {detail.items.map((item, idx) => (
                 <p key={idx}>
