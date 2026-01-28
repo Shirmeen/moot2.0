@@ -5,11 +5,11 @@
 }
 
 :root {
-    --primary-color: #1a4d5c;
-    --secondary-color: #1a9ba5;
-    --accent-color: #167d8a;
-    --light-bg: #e8dcc8;
-    --dark-text: #1a4d5c;
+    --primary-color: #0d3b52;
+    --secondary-color: #00a9b5;
+    --accent-color: #008b96;
+    --light-bg: #f0f2f5;
+    --dark-text: #0d3b52;
     --white: #ffffff;
 }
 
@@ -130,7 +130,7 @@ body {
     color: var(--primary-color);
 }
 
-.about > .container > p {
+.about>.container>p {
     text-align: center;
     font-size: 1.1rem;
     margin-bottom: 50px;
@@ -280,7 +280,7 @@ body {
     color: var(--primary-color);
 }
 
-.contact > .container > p {
+.contact>.container>p {
     font-size: 1.1rem;
     margin-bottom: 30px;
     color: #666;
@@ -390,6 +390,7 @@ html {
         opacity: 0;
         transform: translateY(20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
