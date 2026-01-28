@@ -14,10 +14,10 @@ function Hero() {
       <div className="hero-content">
         <div className="partners-logos animate-down">
           <img src={process.env.PUBLIC_URL + "/crescent-logo.png"} alt="Crescent Model School" className="partner-logo animate-float" />
-          <span className="partner-placeholder" style={{ color: '#0d3b52' }}>AND</span>
+          <span className="partner-placeholder">AND</span>
           <img src={process.env.PUBLIC_URL + "/kifayat-logo.png"} alt="Kifayat Publishers" className="partner-logo animate-float" />
         </div>
-        <p className="present animate-zoom delay-1" style={{ color: '#00a9b5' }}>PRESENT</p>
+        <p className="present animate-zoom delay-1">PRESENT</p>
         <div className="hero-logo-container animate-up delay-2">
           <img src={process.env.PUBLIC_URL + "/hero-logo-new.png"} alt="Crescent Academia Moot 2.0" className="hero-logo" />
         </div>
@@ -28,7 +28,6 @@ function Hero() {
         <button className="cta-button animate-up delay-4" onClick={scrollToDetails}>Learn More</button>
       </div>
     </section>
-
   );
 }
 

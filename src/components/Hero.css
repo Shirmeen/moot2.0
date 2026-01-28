@@ -97,6 +97,7 @@
   width: auto;
   vertical-align: middle;
   transition: transform 0.3s ease;
+  filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.1));
 }
 
 .partner-logo:hover {
@@ -110,6 +111,7 @@
   color: var(--accent-color) !important;
   margin-bottom: 25px;
   text-transform: uppercase;
+  text-shadow: 0 2px 4px rgba(0, 169, 181, 0.2);
 }
 
 .hero-tagline {
