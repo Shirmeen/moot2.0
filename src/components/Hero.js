@@ -32,16 +32,8 @@ function Hero() {
         </div>
         <button className="cta-button animate-pulse-soft delay-5" onClick={scrollToDetails}>Learn More</button>
       </div>
-      <div className="scroll-indicator animate-down delay-5">
-        <div className="mouse">
-          <div className="wheel"></div>
-        </div>
-        <div className="arrow">
-          <span></span>
-          <span></span>
-        </div>
-      </div>
     </section>
+
 
   );
 }

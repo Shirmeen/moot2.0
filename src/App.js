@@ -5,12 +5,12 @@ import About from './components/About';
 import Details from './components/Details';
 import Location from './components/Location';
 import Contact from './components/Contact';
+import Registration from './components/Registration';
 import Footer from './components/Footer';
 import './App.css';
 
 function App() {
   const [activeSection, setActiveSection] = useState('home');
-
   const [showBackToTop, setShowBackToTop] = useState(false);
 
   useEffect(() => {
@@ -43,9 +43,11 @@ function App() {
       <Hero />
       <About />
       <Details />
+      <Registration />
       <Location />
       <Contact />
       <Footer />
+
 
       {showBackToTop && (
         <button
