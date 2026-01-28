@@ -15,7 +15,7 @@ function Hero() {
         <div className="partners-logos">
           <span className="partner-placeholder" style={{ color: '#0d3b52' }}>CRESCENT MODEL SCHOOL</span>
           <span className="partner-placeholder" style={{ color: '#0d3b52' }}>AND</span>
-          <span className="partner-placeholder" style={{ color: '#0d3b52' }}>KIFAYAT PUBLISHERS</span>
+          <img src={process.env.PUBLIC_URL + "/kifayat-logo.png"} alt="Kifayat Publishers" className="partner-logo" />
         </div>
         <p className="present" style={{ color: '#00a9b5' }}>PRESENT</p>
         <img src={process.env.PUBLIC_URL + "/hero-logo-new.png"} alt="Crescent Academia Moot 2.0" className="hero-logo" />
