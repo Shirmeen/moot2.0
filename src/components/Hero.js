@@ -12,7 +12,13 @@ function Hero() {
   return (
     <section id="home" className="hero">
       <div className="hero-content">
-        <img src="/hero-logo.png" alt="Navigating EDventure - Crescent Academia Moot 2.0" className="hero-logo" />
+        <div className="partners-logos">
+          <span className="partner-placeholder">CRESCENT MODEL SCHOOL</span>
+          <span className="partner-placeholder">AND</span>
+          <span className="partner-placeholder">KIFAYAT PUBLISHERS</span>
+        </div>
+        <p className="present">PRESENT</p>
+        <img src="/hero-logo.png" alt="Crescent Academia Moot 2.0" className="hero-logo" />
         <div className="event-dates">
           <p><strong>February 13 - 15, 2026</strong></p>
           <p>at Crescent Model Higher Secondary School (Girls Campus)</p>
