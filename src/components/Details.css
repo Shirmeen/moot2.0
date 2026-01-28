@@ -28,7 +28,7 @@
 
 .detail-item:hover {
   transform: translateX(5px);
-  box-shadow: 0 5px 20px rgba(26, 154, 165, 0.25);
+  box-shadow: 0 5px 20px rgba(0, 169, 181, 0.25);
   border-left-width: 8px;
 }
 
