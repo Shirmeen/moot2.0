@@ -1,8 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Navbar.css';
 
 function Navbar({ activeSection }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
@@ -13,19 +22,25 @@ function Navbar({ activeSection }) {
   };
 
   return (
-    <nav className="navbar">
+    <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="container">
         <div className="nav-content">
-          <div className="logo">
+          <div className="logo animate-left">
             <span className="logo-text">Moot 2.0</span>
           </div>
           <div className={`nav-menu ${mobileMenuOpen ? 'active' : ''}`}>
-            <a href="#home" onClick={(e) => { e.preventDefault(); scrollToSection('home'); }} className={activeSection === 'home' ? 'active' : ''}>Home</a>
-            <a href="#about" onClick={(e) => { e.preventDefault(); scrollToSection('about'); }} className={activeSection === 'about' ? 'active' : ''}>About</a>
-            <a href="#details" onClick={(e) => { e.preventDefault(); scrollToSection('details'); }} className={activeSection === 'details' ? 'active' : ''}>Details</a>
-            <a href="#location" onClick={(e) => { e.preventDefault(); scrollToSection('location'); }} className={activeSection === 'location' ? 'active' : ''}>Location</a>
-            <a href="#contact" onClick={(e) => { e.preventDefault(); scrollToSection('contact'); }} className={activeSection === 'contact' ? 'active' : ''}>Contact</a>
+            {['home', 'about', 'details', 'location', 'contact'].map((section, index) => (
+              <a
+                key={section}
+                href={`#${section}`}
+                onClick={(e) => { e.preventDefault(); scrollToSection(section); }}
+                className={`${activeSection === section ? 'active' : ''} animate-down delay-${index + 1}`}
+              >
+                {section.charAt(0).toUpperCase() + section.slice(1)}
+              </a>
+            ))}
           </div>
+
           <div className="hamburger" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
             <span></span>
             <span></span>

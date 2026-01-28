@@ -1,14 +1,23 @@
 .navbar {
-  background: rgba(13, 59, 82, 0.95) !important;
-  backdrop-filter: blur(10px);
+  background: rgba(13, 59, 82, 0.98) !important;
+  backdrop-filter: blur(15px);
   color: #ffffff;
   padding: 1rem 0;
-  position: sticky;
+  position: fixed;
+  width: 100%;
   top: 0;
   z-index: 1000;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   box-shadow: var(--shadow-md);
   border-bottom: 2px solid var(--secondary-color) !important;
 }
+
+.navbar.scrolled {
+  padding: 0.7rem 0;
+  box-shadow: var(--shadow-lg);
+}
+
+
 
 
 .nav-content {

@@ -1,9 +1,9 @@
 .hero {
   background-color: var(--light-bg);
   color: var(--dark-text);
-  padding: 100px 20px;
+  padding: 120px 20px;
   text-align: center;
-  min-height: 600px;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -11,34 +11,238 @@
   overflow: hidden;
 }
 
-/* Diagonal Ribbons from the Poster */
+/* Floating Decorative Elements */
+.floating-elements {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.element {
+  position: absolute;
+  background: var(--gradient-1);
+  border-radius: 50%;
+  opacity: 0.1;
+  filter: blur(20px);
+  animation: floatAround 20s infinite linear;
+}
+
+.elem-1 {
+  width: 100px;
+  height: 100px;
+  top: 10%;
+  left: 10%;
+}
+
+.elem-2 {
+  width: 150px;
+  height: 150px;
+  top: 60%;
+  left: 80%;
+  animation-duration: 25s;
+}
+
+.elem-3 {
+  width: 80px;
+  height: 80px;
+  top: 40%;
+  left: 70%;
+  animation-duration: 30s;
+}
+
+.elem-4 {
+  width: 200px;
+  height: 200px;
+  top: 80%;
+  left: 20%;
+  animation-duration: 35s;
+}
+
+.elem-5 {
+  width: 60px;
+  height: 60px;
+  top: 20%;
+  left: 90%;
+  animation-duration: 18s;
+}
+
+.elem-6 {
+  width: 120px;
+  height: 120px;
+  top: 50%;
+  left: 5%;
+  animation-duration: 22s;
+}
+
+@keyframes floatAround {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+
+  33% {
+    transform: translate(100px, 50px) rotate(120deg);
+  }
+
+  66% {
+    transform: translate(-50px, 100px) rotate(240deg);
+  }
+
+  100% {
+    transform: translate(0, 0) rotate(360deg);
+  }
+}
+
+/* Scroll Indicator */
+.scroll-indicator {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  z-index: 5;
+}
+
+.mouse {
+  width: 25px;
+  height: 40px;
+  border: 2px solid var(--deep-navy);
+  border-radius: 15px;
+  position: relative;
+}
+
+.wheel {
+  width: 4px;
+  height: 8px;
+  background: var(--accent-color);
+  border-radius: 2px;
+  position: absolute;
+  top: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: scrollWheel 2s infinite;
+}
+
+@keyframes scrollWheel {
+  0% {
+    transform: translate(-50%, 0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(-50%, 20px);
+    opacity: 0;
+  }
+}
+
+.arrow span {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-bottom: 2px solid var(--deep-navy);
+  border-right: 2px solid var(--deep-navy);
+  transform: rotate(45deg);
+  margin: -5px;
+  animation: arrowDown 2s infinite;
+}
+
+.arrow span:nth-child(2) {
+  animation-delay: -0.2s;
+}
+
+@keyframes arrowDown {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-10px, -10px);
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(10px, 10px);
+  }
+}
+
+
+/* Dynamic Layered Geometric Shapes (Replacing Blobs) */
 .hero::before {
   content: '';
   position: absolute;
-  top: -100px;
+  top: -50px;
   left: -100px;
-  width: 400px;
-  height: 400px;
-  background: linear-gradient(135deg, var(--accent-color) 0%, var(--accent-color) 40%, var(--deep-navy) 40%, var(--deep-navy) 60%, var(--primary-color) 60%, var(--primary-color) 100%);
-  transform: rotate(45deg);
+  width: 500px;
+  height: 800px;
+  background: linear-gradient(165deg, var(--primary-color) 0%, var(--accent-color) 50%, transparent 100%);
+  clip-path: polygon(0 0, 100% 0, 60% 100%, 0% 100%);
   z-index: 1;
-  opacity: 0.8;
+  opacity: 0.9;
   box-shadow: var(--shadow-lg);
+  animation: slideInLeft 1.2s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .hero::after {
   content: '';
   position: absolute;
-  bottom: -150px;
-  right: -150px;
-  width: 500px;
-  height: 500px;
-  background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-color) 40%, var(--secondary-color) 40%, var(--secondary-color) 50%, var(--accent-color) 50%, var(--accent-color) 100%);
-  transform: rotate(45deg);
+  bottom: -50px;
+  right: -100px;
+  width: 600px;
+  height: 900px;
+  background: linear-gradient(345deg, var(--deep-navy) 0%, var(--primary-color) 60%, transparent 100%);
+  clip-path: polygon(40% 0, 100% 0, 100% 100%, 0% 100%);
   z-index: 1;
   opacity: 0.8;
   box-shadow: var(--shadow-lg);
+  animation: slideInRight 1.2s cubic-bezier(0.23, 1, 0.32, 1);
 }
+
+/* Additional accent stripe for depth */
+.hero-content::before {
+  content: '';
+  position: absolute;
+  top: 10%;
+  left: -250px;
+  width: 150px;
+  height: 100%;
+  background: var(--secondary-color);
+  transform: rotate(-15deg);
+  opacity: 0.3;
+  z-index: -1;
+  filter: blur(2px);
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%) skewX(-15deg);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0) skewX(0);
+    opacity: 0.9;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%) skewX(-15deg);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0) skewX(0);
+    opacity: 0.8;
+  }
+}
+
 
 .hero-content h1 {
   font-size: 3.5rem;
@@ -218,23 +422,29 @@
 
 @media (max-width: 768px) {
   .hero {
-    padding: 60px 20px;
+    padding: 140px 20px 60px;
     min-height: auto;
   }
 
   .hero::before {
-    width: 250px;
-    height: 250px;
-    top: -120px;
-    left: -120px;
+    width: 200px;
+    height: 400px;
+    top: -50px;
+    left: -50px;
+    opacity: 0.7;
+    clip-path: polygon(0 0, 100% 0, 50% 100%, 0% 100%);
   }
 
   .hero::after {
-    width: 300px;
-    height: 300px;
-    bottom: -150px;
-    right: -150px;
+    width: 250px;
+    height: 450px;
+    bottom: -50px;
+    right: -50px;
+    opacity: 0.6;
+    clip-path: polygon(50% 0, 100% 0, 100% 100%, 0% 100%);
   }
+
+
 
   .partners-logos {
     flex-direction: column;
@@ -285,7 +495,7 @@
 
 @media (max-width: 480px) {
   .hero {
-    padding: 40px 15px;
+    padding: 120px 15px 40px;
   }
 
   .hero-logo {
@@ -294,12 +504,13 @@
   }
 
   .partners-logos {
-    gap: 10px;
+    gap: 15px;
   }
 
   .partner-logo {
-    max-height: 60px;
+    max-height: 80px;
   }
+
 
   .hero-content h1 {
     font-size: 1.5rem;
