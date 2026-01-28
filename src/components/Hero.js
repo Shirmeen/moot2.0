@@ -19,7 +19,7 @@ function Hero() {
       <div className="hero-content">
         <div className="partners-logos animate-down">
           <img src={process.env.PUBLIC_URL + "/crescent-logo.png"} alt="Crescent Model School" className="partner-logo animate-float" />
-          <span className="partner-placeholder">AND</span>
+          <span className="partner-placeholder">&</span>
           <img src={process.env.PUBLIC_URL + "/kifayat-logo.png"} alt="Kifayat Publishers" className="partner-logo animate-float" />
         </div>
         <p className="present animate-reveal">PRESENT</p>

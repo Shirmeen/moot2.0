@@ -306,11 +306,12 @@
 .partner-placeholder {
   font-weight: 800;
   color: var(--deep-navy);
-  font-size: 1.1rem;
+  font-size: 2.8rem;
   opacity: 0.9;
-  line-height: 1.4;
+  line-height: 1;
   display: inline-block;
-  padding: 0 10px;
+  padding: 0 20px;
+  vertical-align: middle;
 }
 
 .partner-logo {
