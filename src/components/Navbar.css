@@ -1,11 +1,12 @@
 .navbar {
-  background-color: var(--primary-color);
-  color: var(--white);
-  padding: 1rem 0;
+  background-color: #0d3b52 !important;
+  color: #ffffff;
+  padding: 1.2rem 0;
   position: sticky;
   top: 0;
   z-index: 100;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-bottom: 3px solid #00a9b5 !important;
 }
 
 .nav-content {
@@ -20,13 +21,7 @@
   gap: 12px;
   font-size: 1.5rem;
   font-weight: bold;
-  color: var(--secondary-color);
-}
-
-.logo-img {
-  height: 50px;
-  width: auto;
-  object-fit: contain;
+  color: var(--white);
 }
 
 .logo-text {
@@ -66,8 +61,19 @@
 
 .nav-menu a:hover,
 .nav-menu a.active {
-  color: var(--secondary-color);
+  color: var(--secondary-color) !important;
   transform: translateY(-2px);
+}
+
+.nav-menu a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--secondary-color);
+  transition: width 0.3s ease;
 }
 
 .hamburger {

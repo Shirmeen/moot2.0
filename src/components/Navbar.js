@@ -17,7 +17,6 @@ function Navbar({ activeSection }) {
       <div className="container">
         <div className="nav-content">
           <div className="logo">
-            <img src="/logo.png" alt="Crescent Academia Moot 2.0" className="logo-img" />
             <span className="logo-text">Moot 2.0</span>
           </div>
           <div className={`nav-menu ${mobileMenuOpen ? 'active' : ''}`}>
