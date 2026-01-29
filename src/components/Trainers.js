@@ -3,30 +3,36 @@ import './Trainers.css';
 
 const trainers = [
     {
+        name: "Dr. Syeda Manal Akbar",
+        role: "Vice Principal - IB Girls Campus",
+        bio: "Dr. Syeda Manal Akbar is an experienced education leader and Vice Principal of the IB Girls Campus at Crescent Model Higher Secondary School, Lahore. With international experience in the Middle East and the UK, she brings a strong global perspective to IB curriculum leadership.",
+        workshop: "IB PYP in Pakistan vs International PYP Schools: Bridging local context with global practice",
+        image: "/speakers/syeda_manal_new.png"
+    },
+    {
+        name: "Farah Masood",
+        role: "Panelist | Head of School - Learning Alliance International",
+        bio: "Farah Masood is a seasoned IB practitioner and accomplished school leader with over three decades of experience. As Head of School at Learning Alliance International, she has led diverse academic teams and served as Chairperson of the Executive Committee of IBPAK from 2023 to 2025.",
+        image: "/speakers/farah_masood_new.png"
+    },
+    {
         name: "Amina Amir-ud-Din Chughtai",
         role: "Trainer",
         bio: "Amina holds a PGCEi from Canterbury Christchurch University, UK, and a certificate in SUSI from California State University, USA. She is an accredited Cambridge International Trainer for Enrichment Programmes and a Cambridge PDQ programme leader with over 23 years of experience in teaching and training.",
-        image: "/speakers/amina.png"
-    },
-    {
-        name: "Tayyabah Amer Malik",
-        role: "Trainer",
-        bio: "With over two decades of international experience across Pakistan, Malaysia, the UAE, and the USA, Tayyabah is a seasoned educational leader. A certified IB Head of School for PYP and MYP, she specializes in curriculum leadership and school improvement.",
-        workshop: "From Learning Theories to IB Practice: Why We Teach the Way We Teach",
-        image: "/speakers/tayyabah_trainer.png"
+        image: "/speakers/amina_new.png"
     },
     {
         name: "Asma Amanat",
         role: "Trainer & Panelist",
         bio: "Ms. Asma Amanat has joined Crescent as General Manager of MYP and DP, bringing 16 years of experience in IB education. A seasoned IB practitioner and international academic author, her research has been featured in the European Journal of Education.",
-        image: "/speakers/asma.jpg"
+        image: "/speakers/asma_new.png"
     },
     {
         name: "Tina Hameed",
         role: "Trainer & Panelist",
         bio: "Tina Hameed is the founding Director of the Teaching and Learning Centre (TLC) at Aitchison College. She has been teaching and training for 37 years and is an accredited tutor from the University of Bradford.",
         workshop: "Learning that Lasts",
-        image: "/speakers/tina_trainer.png"
+        image: "/speakers/tina.png"
     },
     {
         name: "Dr. Iain Riley",

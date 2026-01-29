@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
 import Organizer from './components/Organizer';
+import CoOrganizer from './components/CoOrganizer';
 import Details from './components/Details';
 import Location from './components/Location';
 import Contact from './components/Contact';
@@ -46,6 +47,7 @@ function App() {
       <Hero />
       <About />
       <Organizer />
+      <CoOrganizer />
       <Details />
       <Speakers />
       <Trainers />
