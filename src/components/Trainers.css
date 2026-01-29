@@ -72,6 +72,10 @@
     object-fit: cover;
 }
 
+.trainer-image.center-taimur {
+    object-position: 45% center;
+}
+
 .trainer-info {
     width: 100%;
 }

@@ -27,7 +27,7 @@ function About() {
         <p className="animate-up delay-1">Crescent Academia Moot 2.0 is a prestigious academic event organized by Crescent Girls, bringing together students and professionals for an enriching experience focused on intellectual discourse, debate, and networking.</p>
         <div className="highlights">
           {highlights.map((highlight, index) => (
-            <div key={highlight.id} className={`highlight-card animate-zoom delay-${index + 1}`}>
+            <div key={highlight.id} className={`highlight-card highlight-${highlight.id} animate-zoom delay-${index + 1}`}>
               <h3>{highlight.title}</h3>
               <p>{highlight.description}</p>
             </div>

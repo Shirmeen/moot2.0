@@ -15,8 +15,9 @@ const Organizer = () => {
                         <span className="organizer-title">Principal, Crescent Model Higher Secondary School (Girls Campus)</span>
                         <p className="organizer-bio">
                             Miss Sofia Qadir Khan is a visionary educational leader committed to fostering a supportive and inclusive environment.
-                            Under her leadership, she inspires students to develop creativity, confidence, and resilience, empowering
-                            them to become ethical, lifelong learners and achieve excellence in all facets of life.
+                            Under her leadership, <strong>Crescent Model Higher Secondary School</strong> continues its 57-year legacy of nurturing talented youth.
+                            Renowned for high educational standards and merit-based admissions, the school builds a strong academic ethos
+                            to produce confident, capable, and value-driven "Crescentarians."
                         </p>
                     </div>
                 </div>

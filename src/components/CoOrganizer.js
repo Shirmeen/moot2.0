@@ -13,9 +13,7 @@ const CoOrganizer = () => {
                         <span className="co-organizer-label">Co-Organizer</span>
                         <h2>Kifayat Publishers</h2>
                         <p className="co-organizer-text">
-                            Kifayat Publishers is a leading name in educational excellence and publishing in Pakistan.
-                            With a legacy of providing high-quality educational resources, they are committed to
-                            advancing literacy and supporting teachers and institutions nationwide.
+                            Established in 1963, <strong>Kifayat Publishers</strong> is a trusted name in Education. Their mission is to provide quality education at affordable pricing, partnering with leading international publishers to bring the latest pedagogy to Pakistan. They craft content that fosters curiosity, encourages research, and prepares students for the future.
                         </p>
                     </div>
                 </div>

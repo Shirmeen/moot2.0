@@ -10,10 +10,24 @@ const trainers = [
         image: "/speakers/syeda_manal_new.png"
     },
     {
+        name: "Dr. Shazia Iqbal Khan",
+        role: "Moderator | Head of School IB TNS Beaconhouse Gulberg",
+        bio: "Dr. Shazia Iqbal Khan is a seasoned educator and visionary leader with over two decades of experience. A medical graduate turned education innovator, she has led multiple schools to IB accreditation and is the Chairperson of the IB Pakistan Association (2018 & 2025).",
+        image: "/speakers/shazia.jpg"
+    },
+    {
         name: "Farah Masood",
         role: "Panelist | Head of School - Learning Alliance International",
         bio: "Farah Masood is a seasoned IB practitioner and accomplished school leader with over three decades of experience. As Head of School at Learning Alliance International, she has led diverse academic teams and served as Chairperson of the Executive Committee of IBPAK from 2023 to 2025.",
         image: "/speakers/farah_masood_new.png"
+    },
+    {
+        name: "Taimur K Bandey",
+        role: "Trainer & Panelist | Head of School Trinity School",
+        bio: "Taimur K Bandey is Head of School at Trinity (IB, Cambridge and American High School), Lahore. An IB consultant with 25+ years of experience, he is a former member of the national commission for curriculum development for the Government of Pakistan.",
+        workshop: "REIMAGINING THE IB EDUCATION",
+        image: "/speakers/taimur_new.png",
+        customClass: "center-taimur"
     },
     {
         name: "Amina Amir-ud-Din Chughtai",
@@ -55,7 +69,7 @@ const Trainers = () => {
                     {trainers.map((trainer, index) => (
                         <div className="trainer-card" key={index}>
                             <div className="trainer-image-container">
-                                <img src={process.env.PUBLIC_URL + trainer.image} alt={trainer.name} className="trainer-image" />
+                                <img src={process.env.PUBLIC_URL + trainer.image} alt={trainer.name} className={`trainer-image ${trainer.customClass || ''}`} />
                             </div>
                             <div className="trainer-info">
                                 <span className="trainer-role">{trainer.role}</span>
