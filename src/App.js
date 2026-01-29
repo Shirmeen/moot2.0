@@ -6,6 +6,7 @@ import Details from './components/Details';
 import Location from './components/Location';
 import Contact from './components/Contact';
 import Registration from './components/Registration';
+import Speakers from './components/Speakers';
 import Footer from './components/Footer';
 import './App.css';
 
@@ -43,6 +44,7 @@ function App() {
       <Hero />
       <About />
       <Details />
+      <Speakers />
       <Registration />
       <Location />
       <Contact />

@@ -29,7 +29,7 @@ function Navbar({ activeSection }) {
             <span className="logo-text">Moot 2.0</span>
           </div>
           <div className={`nav-menu ${mobileMenuOpen ? 'active' : ''}`}>
-            {['home', 'about', 'details', 'registration', 'location', 'contact'].map((section, index) => (
+            {['home', 'about', 'details', 'speakers', 'registration', 'location', 'contact'].map((section, index) => (
               <a
                 key={section}
                 href={`#${section}`}
