@@ -2,11 +2,13 @@ import React, { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
+import Organizer from './components/Organizer';
 import Details from './components/Details';
 import Location from './components/Location';
 import Contact from './components/Contact';
 import Registration from './components/Registration';
 import Speakers from './components/Speakers';
+import Trainers from './components/Trainers';
 import Footer from './components/Footer';
 import './App.css';
 
@@ -43,8 +45,10 @@ function App() {
       <Navbar activeSection={activeSection} />
       <Hero />
       <About />
+      <Organizer />
       <Details />
       <Speakers />
+      <Trainers />
       <Registration />
       <Location />
       <Contact />

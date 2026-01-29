@@ -3,6 +3,12 @@ import './Speakers.css';
 
 const speakers = [
     {
+        name: "Dr. Ali Cheema",
+        role: "Chief Guest",
+        bio: "Dr. Ali Cheema, Vice Chancellor of LUMS, is a distinguished economist whose work focuses on economic development, human capital, inclusion, and political economy. He has served in several leadership roles, including Chair of the Economics Department and Director of the Mahbub Ul Haq Research Centre. He currently serves on the Board of Directors of the State Bank of Pakistan and holds a PhD from the University of Cambridge as a Rhodes Scholar.",
+        image: "/speakers/ali_cheema.png"
+    },
+    {
         name: "Dr. Attiya Inayatullah",
         role: "Keynote Speaker",
         bio: "Dr. Attiya Inayatullah is a prominent Pakistani figure with a distinguished career in population welfare, human rights, and women's issues. She holds a PhD in Demographics and led the Family Planning Association of Pakistan for many years. She gained international recognition through her work with UNESCO, advocating for gender equality, social development, and bioethics. She has been awarded the highest civilian award in Pakistan and the UN's Ceres Medal for women.",

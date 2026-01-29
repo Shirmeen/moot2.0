@@ -15,7 +15,7 @@ function Details() {
       id: 2,
       title: '📍 Location',
       items: [
-        { label: '', value: 'The Crescent College Lahore' },
+        { label: '', value: 'Crescent Model Higher Secondary School' },
         { label: '', value: 'Girls Campus' },
         { label: '', value: 'Lahore, Punjab, Pakistan' }
       ]
