@@ -48,11 +48,20 @@
     flex-direction: row;
     text-align: left;
     padding: 40px;
-    background: linear-gradient(135deg, #fffdf5 0%, #ffffff 100%);
+    background: linear-gradient(135deg, #163b4a 0%, #0f2c3a 100%);
     border: 2px solid #f1c40f;
     /* Vibrant Gold */
     position: relative;
-    box-shadow: 0 15px 40px rgba(241, 196, 15, 0.15);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    color: #ffffff;
+}
+
+.speaker-card:first-child h3 {
+    color: #ffffff;
+}
+
+.speaker-card:first-child .speaker-bio {
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .speaker-card:first-child::after {
@@ -85,11 +94,23 @@
     flex-direction: row;
     text-align: left;
     padding: 40px;
-    background: linear-gradient(135deg, #f0f9ff 0%, #ffffff 100%);
+    background: linear-gradient(135deg, #163b4a 0%, #0f2c3a 100%);
     border: 2px solid #3498db;
     /* Sleek Blue */
     position: relative;
-    box-shadow: 0 15px 40px rgba(52, 152, 219, 0.15);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    color: #ffffff;
+}
+
+.speaker-card:nth-child(2) h3 {
+    color: #ffffff;
+    font-size: 2.2rem;
+}
+
+.speaker-card:nth-child(2) .speaker-bio {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.1rem;
+    max-width: 800px;
 }
 
 .speaker-card:nth-child(2)::after {
@@ -152,6 +173,12 @@
     transform: translateY(-10px);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
     background: #ffffff;
+}
+
+/* Preserve dark background on hover for Chief Guest & Keynote */
+.speaker-card:first-child:hover,
+.speaker-card:nth-child(2):hover {
+    background: linear-gradient(135deg, #163b4a 0%, #0f2c3a 100%);
 }
 
 .speaker-card::before {

@@ -24,58 +24,111 @@
 
 .element {
   position: absolute;
-  background: var(--gradient-1);
-  border-radius: 50%;
-  opacity: 0.1;
-  filter: blur(20px);
-  animation: floatAround 20s infinite linear;
+  opacity: 0.15;
+  animation: floatAround 25s infinite linear;
+  color: var(--deep-navy);
+  z-index: 1;
+}
+
+.element svg {
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
 }
 
 .elem-1 {
-  width: 100px;
-  height: 100px;
+  width: 60px;
+  height: 60px;
   top: 10%;
   left: 10%;
 }
 
 .elem-2 {
-  width: 150px;
-  height: 150px;
+  width: 90px;
+  height: 90px;
   top: 60%;
   left: 80%;
   animation-duration: 25s;
 }
 
 .elem-3 {
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
   top: 40%;
   left: 70%;
   animation-duration: 30s;
 }
 
 .elem-4 {
-  width: 200px;
-  height: 200px;
+  width: 110px;
+  height: 110px;
   top: 80%;
   left: 20%;
   animation-duration: 35s;
 }
 
 .elem-5 {
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   top: 20%;
   left: 90%;
   animation-duration: 18s;
 }
 
 .elem-6 {
-  width: 120px;
-  height: 120px;
+  width: 70px;
+  height: 70px;
   top: 50%;
   left: 5%;
   animation-duration: 22s;
+}
+
+.elem-7 {
+  width: 55px;
+  height: 55px;
+  top: 15%;
+  left: 40%;
+  animation-duration: 28s;
+}
+
+.elem-8 {
+  width: 85px;
+  height: 85px;
+  top: 75%;
+  left: 60%;
+  animation-duration: 32s;
+}
+
+.elem-9 {
+  width: 45px;
+  height: 45px;
+  top: 30%;
+  left: 20%;
+  animation-duration: 20s;
+}
+
+.elem-10 {
+  width: 100px;
+  height: 100px;
+  top: 85%;
+  left: 90%;
+  animation-duration: 38s;
+}
+
+.elem-11 {
+  width: 35px;
+  height: 35px;
+  top: 5%;
+  left: 70%;
+  animation-duration: 24s;
+}
+
+.elem-12 {
+  width: 65px;
+  height: 65px;
+  top: 45%;
+  left: 35%;
+  animation-duration: 26s;
 }
 
 @keyframes floatAround {
@@ -192,19 +245,43 @@
   margin-bottom: 40px;
   position: relative;
   display: inline-block;
+  padding: 40px;
+  /* Add some padding to give the background space */
 }
 
+/* Inner Glowing Aura */
+/* Soft, filled gradient splash behind the logo */
 .hero-logo-container::before {
   content: '';
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 100%;
-  height: 100%;
-  background: radial-gradient(circle, rgba(0, 169, 181, 0.2) 0%, transparent 70%);
+  width: 140%;
+  height: 140%;
+  background: radial-gradient(circle at center, rgba(22, 59, 74, 0.85) 0%, rgba(0, 169, 181, 0.5) 45%, rgba(22, 59, 74, 0.1) 70%, transparent 85%);
   transform: translate(-50%, -50%);
   z-index: -1;
-  animation: pulseGlow 4s ease-in-out infinite;
+  border-radius: 50%;
+  filter: blur(30px);
+  animation: breathe 8s ease-in-out infinite;
+}
+
+.hero-logo-container::after {
+  display: none;
+}
+
+@keyframes breathe {
+
+  0%,
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.8;
+  }
+
+  50% {
+    transform: translate(-50%, -50%) scale(1.1);
+    opacity: 1;
+  }
 }
 
 .hero-logo {
