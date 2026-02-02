@@ -150,30 +150,33 @@
 }
 
 .highlight-1::before {
-  border-color: #00cec9;
+  border-color: var(--primary-color);
   top: 10%;
   left: 5%;
   width: 40px;
   height: 40px;
   display: block;
+  opacity: 0.15;
 }
 
 .highlight-2::before {
-  border-color: #0984e3;
+  border-color: var(--accent-color);
   top: 80%;
   left: 85%;
   width: 50px;
   height: 50px;
   display: block;
+  opacity: 0.15;
 }
 
 .highlight-3::before {
-  border-color: #edaf11;
+  border-color: var(--secondary-color);
   top: 20%;
   left: 90%;
   width: 30px;
   height: 30px;
   display: block;
+  opacity: 0.15;
 }
 
 .highlight-card:hover::before {
@@ -199,23 +202,60 @@
 }
 
 .highlight-1 {
-  background: linear-gradient(135deg, rgba(224, 242, 241, 0.6) 0%, #ffffff 100%);
-  border-top: 8px solid #00cec9;
+  background: linear-gradient(135deg, rgba(0, 77, 44, 0.05) 0%, #ffffff 100%);
+  border-top: 8px solid var(--primary-color);
 }
 
 .highlight-2 {
-  background: linear-gradient(135deg, rgba(227, 242, 253, 0.6) 0%, #ffffff 100%);
-  border-top: 8px solid #0984e3;
+  background: linear-gradient(135deg, rgba(0, 169, 181, 0.05) 0%, #ffffff 100%);
+  border-top: 8px solid var(--accent-color);
 }
 
 .highlight-3 {
-  background: linear-gradient(135deg, rgba(255, 253, 231, 0.6) 0%, #ffffff 100%);
-  border-top: 8px solid #edaf11;
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.05) 0%, #ffffff 100%);
+  border-top: 8px solid var(--secondary-color);
 }
 
 .highlight-card:hover {
   transform: translateY(-12px);
   box-shadow: 0 25px 60px rgba(0, 0, 0, 0.08);
+}
+
+.highlight-icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 30px;
+  transition: all 0.4s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.highlight-1 .highlight-icon {
+  background: rgba(0, 77, 44, 0.1);
+  color: var(--primary-color);
+}
+
+.highlight-2 .highlight-icon {
+  background: rgba(0, 169, 181, 0.1);
+  color: var(--accent-color);
+}
+
+.highlight-3 .highlight-icon {
+  background: rgba(212, 175, 55, 0.1);
+  color: var(--secondary-color);
+}
+
+.highlight-icon svg {
+  width: 45px;
+  height: 45px;
+}
+
+.highlight-card:hover .highlight-icon {
+  transform: scale(1.1) rotate(5deg);
 }
 
 .highlight-card h3 {
@@ -225,10 +265,6 @@
   font-weight: 700;
   position: relative;
   z-index: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
 }
 
 .highlight-card p {
