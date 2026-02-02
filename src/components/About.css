@@ -1,6 +1,89 @@
 .about {
   padding: 80px 20px;
-  background-color: var(--light-bg);
+  background: linear-gradient(180deg, var(--light-bg) 0%, #e8f4f8 50%, var(--light-bg) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Floating Background Decorations */
+.about::before {
+  content: '';
+  position: absolute;
+  top: 10%;
+  left: -100px;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(0, 169, 181, 0.08) 0%, transparent 70%);
+  border-radius: 50%;
+  animation: floatBubble 15s ease-in-out infinite;
+  z-index: 0;
+}
+
+.about::after {
+  content: '';
+  position: absolute;
+  bottom: 5%;
+  right: -80px;
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(circle, rgba(22, 59, 74, 0.06) 0%, transparent 70%);
+  border-radius: 50%;
+  animation: floatBubble 18s ease-in-out infinite reverse;
+  z-index: 0;
+}
+
+/* Floating Geometric Shapes */
+.about .container {
+  position: relative;
+  z-index: 1;
+}
+
+.about .container::before {
+  content: '✦';
+  position: absolute;
+  top: 20%;
+  right: 5%;
+  font-size: 2rem;
+  color: var(--accent-color);
+  opacity: 0.15;
+  animation: twinkle 4s ease-in-out infinite;
+}
+
+.about .container::after {
+  content: '◇';
+  position: absolute;
+  bottom: 15%;
+  left: 3%;
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  opacity: 0.12;
+  animation: twinkle 5s ease-in-out infinite 1s;
+}
+
+@keyframes floatBubble {
+
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+  }
+
+  50% {
+    transform: translateY(-30px) scale(1.1);
+  }
+}
+
+@keyframes twinkle {
+
+  0%,
+  100% {
+    opacity: 0.12;
+    transform: rotate(0deg) scale(1);
+  }
+
+  50% {
+    opacity: 0.25;
+    transform: rotate(15deg) scale(1.2);
+  }
 }
 
 .about h2 {
@@ -8,6 +91,18 @@
   font-size: 2.5rem;
   margin-bottom: 30px;
   color: var(--primary-color);
+  position: relative;
+}
+
+/* Underline accent for heading */
+.about h2::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--accent-color), var(--primary-color));
+  margin: 15px auto 0;
+  border-radius: 2px;
 }
 
 .about>.container>p {
@@ -17,6 +112,7 @@
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+  color: #555;
 }
 
 .highlights {
@@ -35,20 +131,38 @@
   overflow: hidden;
   position: relative;
   border: 1px solid rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(10px);
+}
+
+/* Subtle shimmer effect on cards */
+.highlight-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+  transition: left 0.5s ease;
+  z-index: 0;
+}
+
+.highlight-card:hover::after {
+  left: 100%;
 }
 
 .highlight-1 {
-  background: linear-gradient(135deg, #e0f2f1 0%, #ffffff 100%);
+  background: linear-gradient(135deg, rgba(224, 242, 241, 0.9) 0%, rgba(255, 255, 255, 0.95) 100%);
   border-top: 5px solid #00cec9;
 }
 
 .highlight-2 {
-  background: linear-gradient(135deg, #e3f2fd 0%, #ffffff 100%);
+  background: linear-gradient(135deg, rgba(227, 242, 253, 0.9) 0%, rgba(255, 255, 255, 0.95) 100%);
   border-top: 5px solid #0984e3;
 }
 
 .highlight-3 {
-  background: linear-gradient(135deg, #fff9c4 0%, #ffffff 100%);
+  background: linear-gradient(135deg, rgba(255, 249, 196, 0.9) 0%, rgba(255, 255, 255, 0.95) 100%);
   border-top: 5px solid #edaf11;
 }
 
@@ -57,23 +171,23 @@
   display: none;
 }
 
-.highlight-card:hover::before {
-  height: 100%;
-}
-
 .highlight-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 50px rgba(0, 169, 181, 0.15);
 }
 
 .highlight-card h3 {
   font-size: 1.5rem;
   margin-bottom: 15px;
   color: var(--primary-color);
+  position: relative;
+  z-index: 1;
 }
 
 .highlight-card p {
   color: #666;
+  position: relative;
+  z-index: 1;
 }
 
 @media (max-width: 768px) {
@@ -83,6 +197,17 @@
 
   .highlights {
     grid-template-columns: 1fr;
+  }
+
+  .about::before,
+  .about::after {
+    width: 150px;
+    height: 150px;
+  }
+
+  .about .container::before,
+  .about .container::after {
+    display: none;
   }
 }
 

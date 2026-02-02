@@ -1,17 +1,144 @@
 .panelist-section {
     padding: 100px 20px;
-    background: #ffffff;
+    background: linear-gradient(135deg, #f8fbff 0%, #e8f4f8 30%, #fff5f5 60%, #f0f8ff 100%);
     position: relative;
+    overflow: hidden;
+}
+
+/* Animated gradient overlay */
+.panelist-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:
+        radial-gradient(circle at 20% 80%, rgba(0, 169, 181, 0.08) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(9, 132, 227, 0.08) 0%, transparent 50%),
+        radial-gradient(circle at 50% 50%, rgba(237, 175, 17, 0.05) 0%, transparent 60%);
+    z-index: 0;
+    animation: gradientShift 15s ease-in-out infinite;
+}
+
+@keyframes gradientShift {
+
+    0%,
+    100% {
+        opacity: 0.8;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+}
+
+/* Floating geometric shapes */
+.panelist-section::after {
+    content: '';
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(45deg, rgba(0, 169, 181, 0.1), transparent);
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    top: -100px;
+    right: -100px;
+    animation: morphFloat 20s ease-in-out infinite;
+    z-index: 0;
+}
+
+@keyframes morphFloat {
+
+    0%,
+    100% {
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+        transform: rotate(0deg) translateY(0);
+    }
+
+    25% {
+        border-radius: 58% 42% 75% 25% / 76% 46% 54% 24%;
+    }
+
+    50% {
+        border-radius: 50% 50% 33% 67% / 55% 27% 73% 45%;
+        transform: rotate(90deg) translateY(-20px);
+    }
+
+    75% {
+        border-radius: 33% 67% 58% 42% / 63% 68% 32% 37%;
+    }
 }
 
 .panelist-container {
     max-width: 1200px;
     margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+/* Floating particles/dots */
+.panelist-container::before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: var(--accent-color);
+    border-radius: 50%;
+    top: 10%;
+    left: 5%;
+    opacity: 0.4;
+    animation: floatParticle 8s ease-in-out infinite;
+    box-shadow:
+        100px 50px 0 rgba(9, 132, 227, 0.3),
+        200px 150px 0 rgba(0, 169, 181, 0.25),
+        -50px 200px 0 rgba(237, 175, 17, 0.3),
+        300px -50px 0 rgba(9, 132, 227, 0.2),
+        -100px 100px 0 rgba(0, 169, 181, 0.35);
+}
+
+.panelist-container::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    bottom: 15%;
+    right: 10%;
+    opacity: 0.3;
+    animation: floatParticle 10s ease-in-out infinite reverse;
+    box-shadow:
+        -80px -30px 0 rgba(22, 59, 74, 0.25),
+        50px -100px 0 rgba(0, 169, 181, 0.3),
+        -150px 50px 0 rgba(9, 132, 227, 0.2);
+}
+
+@keyframes floatParticle {
+
+    0%,
+    100% {
+        transform: translateY(0) translateX(0);
+    }
+
+    25% {
+        transform: translateY(-15px) translateX(10px);
+    }
+
+    50% {
+        transform: translateY(-5px) translateX(-5px);
+    }
+
+    75% {
+        transform: translateY(-20px) translateX(5px);
+    }
 }
 
 .panelist-header {
     text-align: center;
     margin-bottom: 60px;
+    position: relative;
 }
 
 .panelist-header h2 {
@@ -23,6 +150,43 @@
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    animation: titleGlow 3s ease-in-out infinite;
+}
+
+@keyframes titleGlow {
+
+    0%,
+    100% {
+        filter: drop-shadow(0 0 0 transparent);
+    }
+
+    50% {
+        filter: drop-shadow(0 0 20px rgba(0, 169, 181, 0.3));
+    }
+}
+
+/* Decorative line under header */
+.panelist-header h2::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(90deg, transparent, var(--accent-color), var(--primary-color), transparent);
+    margin: 20px auto 0;
+    border-radius: 2px;
+    animation: lineExpand 2s ease-out forwards;
+}
+
+@keyframes lineExpand {
+    from {
+        width: 0;
+        opacity: 0;
+    }
+
+    to {
+        width: 100px;
+        opacity: 1;
+    }
 }
 
 .panelist-header p {
@@ -39,21 +203,43 @@
 }
 
 .panelist-card {
-    background: #f8f9fa;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
     border-radius: 24px;
     padding: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    transition: all 0.3s ease;
-    border: 1px solid rgba(0, 0, 0, 0.05);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Card shimmer effect */
+.panelist-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.6), transparent);
+    transition: left 0.6s ease;
+    z-index: 0;
+}
+
+.panelist-card:hover::before {
+    left: 100%;
 }
 
 .panelist-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
-    background: #ffffff;
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 25px 50px rgba(0, 169, 181, 0.15);
+    background: rgba(255, 255, 255, 0.95);
+    border-color: rgba(0, 169, 181, 0.2);
 }
 
 .panelist-image-container {
@@ -64,16 +250,31 @@
     margin-bottom: 20px;
     border: 4px solid #fff;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+    transition: all 0.4s ease;
+}
+
+/* Glowing ring on hover */
+.panelist-card:hover .panelist-image-container {
+    box-shadow: 0 0 0 4px rgba(0, 169, 181, 0.3), 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
 .panelist-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.panelist-card:hover .panelist-image {
+    transform: scale(1.08);
 }
 
 .panelist-info {
     width: 100%;
+    position: relative;
+    z-index: 1;
 }
 
 .panelist-role {
@@ -90,6 +291,11 @@
     font-size: 1.5rem;
     color: #2d3436;
     margin-bottom: 12px;
+    transition: color 0.3s ease;
+}
+
+.panelist-card:hover .panelist-info h3 {
+    color: var(--primary-color);
 }
 
 .panelist-bio {
@@ -105,5 +311,17 @@
 
     .panelist-grid {
         grid-template-columns: 1fr;
+    }
+
+    .panelist-section::after {
+        width: 200px;
+        height: 200px;
+        top: -50px;
+        right: -50px;
+    }
+
+    .panelist-container::before,
+    .panelist-container::after {
+        display: none;
     }
 }
