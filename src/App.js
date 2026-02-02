@@ -10,6 +10,7 @@ import Contact from './components/Contact';
 import Registration from './components/Registration';
 import Speakers from './components/Speakers';
 import Trainers from './components/Trainers';
+import Panelists from './components/Panelists';
 import Footer from './components/Footer';
 import './App.css';
 
@@ -51,6 +52,7 @@ function App() {
       <Details />
       <Speakers />
       <Trainers />
+      <Panelists />
       <Registration />
       <Location />
       <Contact />

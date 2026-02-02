@@ -6,13 +6,22 @@ const speakers = [
         name: "Dr. Ali Cheema",
         role: "Chief Guest",
         bio: "Dr. Ali Cheema, Vice Chancellor of LUMS, is a distinguished economist whose work focuses on economic development, human capital, inclusion, and political economy. He has served in several leadership roles, including Chair of the Economics Department and Director of the Mahbub Ul Haq Research Centre. He currently serves on the Board of Directors of the State Bank of Pakistan and holds a PhD from the University of Cambridge as a Rhodes Scholar.",
-        image: "/speakers/ali_cheema.png"
+        image: "/speakers/ali_cheema.png",
+        customClass: "chief-guest-card"
+    },
+    {
+        name: "Ms. Uzma Shujat",
+        role: "Chief Guest",
+        bio: "Ms. Uzma Shujat, IB Regional Manager, has served as a Lifelong Learning Manager at Birmingham City Council, where she led strategic planning and policy implementation to promote inclusive, high-quality learning opportunities. Her role involved managing and monitoring diverse education projects, ensuring accountability, quality assurance, and impact, while building strong partnerships with voluntary organizations, private and public schools, and government authorities to support community-focused initiatives. Beyond this, she has contributed to large-scale education and development initiatives through projects with the World Bank and multinational companies, supporting programme design, implementation, evaluation, and capacity building. Her international experience reflects an ability to work across sectors, influence policy, and deliver sustainable, system-level improvement through collaborative leadership, evidence-informed decision making, and strong stakeholder engagement.",
+        image: "/speakers/uzma_shujat_new.png",
+        customClass: "chief-guest-card"
     },
     {
         name: "Dr. Attiya Inayatullah",
         role: "Keynote Speaker",
         bio: "Dr. Attiya Inayatullah is a prominent Pakistani figure with a distinguished career in population welfare, human rights, and women's issues. She holds a PhD in Demographics and led the Family Planning Association of Pakistan for many years. She gained international recognition through her work with UNESCO, advocating for gender equality, social development, and bioethics. She has been awarded the highest civilian award in Pakistan and the UN's Ceres Medal for women.",
-        image: "/speakers/attiya.png"
+        image: "/speakers/attiya.png",
+        customClass: "keynote-card"
     },
     {
         name: "Ms. Naveen Balkhi",
@@ -56,7 +65,7 @@ const Speakers = () => {
                 </div>
                 <div className="speakers-grid">
                     {speakers.map((speaker, index) => (
-                        <div className="speaker-card" key={index}>
+                        <div className={`speaker-card ${speaker.customClass || ''}`} key={index}>
                             <div className="speaker-image-container">
                                 {speaker.image ? (
                                     <img src={process.env.PUBLIC_URL + speaker.image} alt={speaker.name} className="speaker-image" />

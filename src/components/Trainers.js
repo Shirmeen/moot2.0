@@ -54,6 +54,26 @@ const trainers = [
         bio: "Dr. Iain Riley is the Head of School at TNS Beaconhouse, DHA Lahore. He holds a PhD in Education from University of Glasgow and has over ten years of leadership experience and is a strong advocate for learner agency.",
         workshop: "PROMOTING SCHOOL CULTURE THROUGH AGENCY",
         image: "/speakers/iain.png"
+    },
+    {
+        name: "Urooj Shahab",
+        role: "PYP Coordinator Beaconhouse Newlands Lahore",
+        bio: "Urooj Shahab is a PYP Coordinator, IBEN Workshop & Programme Leader, with 15 years of experience in education. She specializes in building and leading PYP frameworks that prioritize creative inquiry. Holding a Master's in Art Education, she believes learning is an evolving journey, not a destination. As a ceramic artist, she thrives on creative problem-solving and brings the same patient, hands-on approach to teacher training, curriculum design, and teaching. She views the collaborative energy of shaping education as akin to creating art.",
+        workshop: "Leading Learning the IB Way",
+        image: "/speakers/urooj_shahab_new.png"
+    },
+    {
+        name: "Fatima Ali",
+        role: "MYP Coordinator Beaconhouse Newlands Lahore",
+        bio: "Fatima Ali is an accomplished IB leader and educational strategist with over a decade of experience across the PYP, MYP, and DP frameworks. Currently an IB MYP Coordinator, she drives curriculum alignment, programme quality, and collaborative planning. A recognized IB Educator Network (IBEN) member and DP Examiner for Digital Society and the Extended Essay, she has also contributed as an IB Curriculum Developer. Specializing in interdisciplinary unit design, Service as Action, and embedding ATL skills, Fatima combines research-based insights with practical expertise. She is pursuing an EdD and holds a Harvard Business School Online Certificate in School Management and Leadership.",
+        workshop: "From Transdisciplinary to Interdisciplinary Learning in the IB Continuum: Understanding and Implementing Interdisciplinary Teaching in the MYP",
+        image: "/speakers/fatima_ali_new.png"
+    },
+    {
+        name: "Mr. Jazib Zahir",
+        role: "Educationist and Entrepreneur",
+        bio: "Mr. Jazib is the Director of the LUMS Center for Entrepreneurship and LUMSx the online learning platform. His work experience spans managing software teams for organizations like Sesame Workshop and BBC, bringing solar energy to Pakistan and working with think tanks and investors in education. His AI experience includes conducting trainings for schools across Pakistan and training global organizations like Coca Cola and Hewlett Packard. He has a BS Electrical Engineering from Stanford and an Ed.M. Technology, Innovation and Education from Harvard.",
+        image: "/speakers/jazib_zahir_new.png"
     }
 ];
 
