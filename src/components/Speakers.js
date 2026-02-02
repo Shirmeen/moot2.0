@@ -52,6 +52,12 @@ const speakers = [
         role: "Seasoned Corporate & Educational Policy Trainer",
         bio: "With over 30 years of experience, Abbas Husain is renowned internationally for his teacher training workshops across multiple countries.",
         image: "/speakers/abbas.png"
+    },
+    {
+        name: "Hassaan Fareed",
+        role: "Science Communicator",
+        bio: "Science has the power to change lives, and Hassaan Fareed has made it his mission to bring that power to every corner of Pakistan. As a passionate science communicator, he creates interactive shows filled with exciting experiments and hands-on activities. From bustling cities to remote villages, Hassan Fareed travels widely to spark curiosity and wonder among children and communities. Along the way, he has partnered with Lincoln Corners, Tedx, Tareen Education Foundation and Lahore Astronomical Society, Khawarizmi Science Society and many more to expand the reach of STEM education. Hassaan Fareed believes that science belongs to everyone and makes sure that every session proves it.",
+        image: "/speakers/hassaan_fareed_new.png"
     }
 ];
 

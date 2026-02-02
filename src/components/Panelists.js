@@ -13,6 +13,12 @@ const panelists = [
         role: "Managing Director Kifayat Publishers",
         bio: "SM Omair Saeed, Managing Director of Kifayat Publishers, is a graduate in Industrial Economics Research from the University of Nottingham. He has worked on education research and curriculum development for the unlettered with the World Bank and the Asian Development Bank. For the last decade, he has been looking after the overall operations at Kifayat Publishers; he has a keen interest in Education Pedagogy research, and in recent years, through international partnerships, has tried to bring the best of the latest international educational resources to Pakistan at an affordable price.",
         image: "/speakers/omair_saeed_new.png"
+    },
+    {
+        name: "Dr. Tayyaba Tamim",
+        role: "Dean, Syed Ahsan Ali and Syed Maratib Ali School of Education",
+        bio: "Professor Dr. Tayyaba Tamim is currently Dean and Chair Syeda Perwin Babar Ali at Syed Ahsan Ali and Syed Babar Ali School of Education, Lahore University of Management Sciences (LUMS). Her work, published and presented at national and international forums, covers issues of social justice, equity and inclusivity in education with specific reference to languages in education, language policy, gender and caste. Her ongoing research also explores how education are filtered through class, gender, caste and disability. She also has a strong interest in education for sustainable development and higher education. Dr Tamim has led several funded research projects and publications with national and international partners and forums, including those with USAID, British council, the World Bank, Gates Foundation and IDEAS.",
+        image: "/speakers/tayyaba_tamim_new.png"
     }
 ];
 
