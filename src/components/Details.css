@@ -273,7 +273,7 @@
 .detail-item h3 {
   color: var(--primary-color);
   margin-bottom: 15px;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: 700;
   transition: all 0.3s ease;
   position: relative;
@@ -290,8 +290,9 @@
   margin: 10px 0;
   position: relative;
   z-index: 1;
-  font-size: 1rem;
-  line-height: 1.6;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  font-weight: 500;
 }
 
 @media (max-width: 768px) {
