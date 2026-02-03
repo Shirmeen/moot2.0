@@ -5,6 +5,7 @@ import About from './components/About';
 import Organizer from './components/Organizer';
 import CoOrganizer from './components/CoOrganizer';
 import Details from './components/Details';
+import Schedule from './components/Schedule';
 import Location from './components/Location';
 import Contact from './components/Contact';
 import Registration from './components/Registration';
@@ -69,6 +70,7 @@ function App() {
         <CoOrganizer />
       </div>
       <Details />
+      <Schedule />
       <Speakers />
       <Trainers />
       <Panelists />

@@ -1,0 +1,356 @@
+.schedule-section {
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #f0f7ff 0%, #ffffff 50%, #f5f3ff 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.schedule-bg-elements {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.sched-shape {
+    position: absolute;
+    filter: blur(80px);
+    opacity: 0.4;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.shap-1 {
+    width: 300px;
+    height: 300px;
+    background: rgba(9, 132, 227, 0.2);
+    top: -50px;
+    left: -100px;
+    animation: float 10s infinite alternate;
+}
+
+.shap-2 {
+    width: 400px;
+    height: 400px;
+    background: rgba(108, 92, 231, 0.15);
+    bottom: -100px;
+    right: -150px;
+    animation: float 15s infinite alternate-reverse;
+}
+
+.shap-3 {
+    width: 250px;
+    height: 250px;
+    background: rgba(0, 206, 201, 0.1);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: pulse-soft 8s infinite;
+}
+
+/* Abstract Background Shapes */
+.abstract-shapes {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.a-shape {
+    position: absolute;
+    opacity: 0.2;
+    /* Less bright/vivid */
+    background: linear-gradient(135deg, rgba(9, 132, 227, 0.6), rgba(108, 92, 231, 0.6));
+    animation: morphRotate 25s infinite alternate linear;
+    filter: blur(40px);
+    /* Soft glow look */
+}
+
+.shape-square {
+    width: 250px;
+    height: 250px;
+    top: 5%;
+    left: -50px;
+    border-radius: 30%;
+    background: linear-gradient(135deg, #0984e3, #6c5ce7);
+}
+
+.shape-circle {
+    width: 350px;
+    height: 350px;
+    bottom: -50px;
+    right: -100px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #00cec9, #0984e3);
+}
+
+.shape-triangle {
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(135deg, #e17055, #d63031);
+    top: 30%;
+    right: -50px;
+    border-radius: 40%;
+    animation-duration: 30s;
+}
+
+.shape-pill {
+    width: 400px;
+    height: 150px;
+    top: 55%;
+    left: -100px;
+    border-radius: 100px;
+    background: linear-gradient(90deg, #6c5ce7, #a29bfe);
+    transform: rotate(-30deg);
+}
+
+.delay-mid {
+    animation-delay: -7s;
+    left: 60%;
+    top: -50px;
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(135deg, #f1c40f, #e67e22);
+}
+
+.delay-slow {
+    animation-delay: -14s;
+    left: 30%;
+    bottom: -100px;
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(135deg, #2ecc71, #1abc9c);
+}
+
+@keyframes morphRotate {
+    0% {
+        transform: translate(0, 0) rotate(0deg) scale(1);
+    }
+
+    33% {
+        transform: translate(30px, 50px) rotate(120deg) scale(1.1);
+    }
+
+    66% {
+        transform: translate(-50px, 20px) rotate(240deg) scale(0.9);
+    }
+
+    100% {
+        transform: translate(0, 0) rotate(360deg) scale(1);
+    }
+}
+
+.schedule-container {
+    max-width: 1000px;
+    /* Readability width */
+    margin: 0 auto;
+}
+
+.schedule-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.schedule-header h2 {
+    font-size: 3rem;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+    font-weight: 800;
+    background: linear-gradient(45deg, #0984e3, #6c5ce7);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.schedule-header p {
+    font-size: 1.2rem;
+    color: #636e72;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.schedule-days-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    position: relative;
+}
+
+.schedule-days-wrapper::before {
+    content: '';
+    position: absolute;
+    left: 45px;
+    top: 20px;
+    bottom: 20px;
+    width: 2px;
+    background: rgba(9, 132, 227, 0.2);
+    z-index: 1;
+}
+
+.day-block {
+    position: relative;
+    padding-left: 120px;
+    /* Space for the day label on the side */
+    min-height: 120px;
+    display: flex;
+    align-items: center;
+}
+
+/* Day Label - Side badge */
+.day-label {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #0984e3;
+    color: white;
+    padding: 10px 20px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    border-radius: 12px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(9, 132, 227, 0.3);
+    z-index: 2;
+    min-width: 90px;
+}
+
+.day-content-grid {
+    display: grid;
+    gap: 30px;
+    flex: 1;
+}
+
+.day-content-grid.single-col {
+    grid-template-columns: 1fr;
+}
+
+.day-content-grid.two-col {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.schedule-card {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 0;
+    /* Remove default padding as child elements handle it */
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    border: 2px solid rgba(9, 132, 227, 0.3);
+    /* Thicker and darker border */
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    overflow: hidden;
+    width: 100%;
+}
+
+.schedule-card:hover {
+    transform: translateY(-8px) scale(1.01);
+    box-shadow: 0 20px 40px rgba(9, 132, 227, 0.15);
+    border-color: #0984e3;
+    /* Fully solid dark border on hover */
+    background: rgba(255, 255, 255, 0.95);
+}
+
+.card-header {
+    background: rgba(9, 132, 227, 0.05);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(9, 132, 227, 0.1);
+}
+
+.time-tag {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #0984e3;
+    background: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px rgba(9, 132, 227, 0.1);
+}
+
+.session-type-label {
+    font-size: 0.75rem;
+    font-weight: 800;
+    color: #6c5ce7;
+    background: rgba(108, 92, 231, 0.1);
+    padding: 4px 12px;
+    border-radius: 6px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.card-body {
+    padding: 25px 30px;
+}
+
+.schedule-card h3 {
+    font-size: 1.3rem;
+    color: #2d3436;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.venue-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 15px;
+    color: #00cec9;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.venue-info svg {
+    stroke-width: 2.5;
+}
+
+@media (max-width: 768px) {
+    .day-block {
+        padding-left: 0;
+        padding-top: 50px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .day-label {
+        writing-mode: horizontal-tb;
+        width: auto;
+        padding: 6px 15px;
+        top: 0;
+        left: 0;
+        transform: none;
+        /* Remove centering/alignment transforms */
+        border-radius: 12px;
+        font-size: 0.8rem;
+    }
+
+    .schedule-days-wrapper::before {
+        left: 20px;
+        top: 25px;
+    }
+
+    .card-header {
+        padding: 12px 20px;
+    }
+
+    .card-body {
+        padding: 20px;
+    }
+}
+
+.schedule-highlight {
+    color: #0984e3 !important;
+    font-weight: 700;
+    font-size: 1.2rem !important;
+    margin-top: 5px !important;
+}
