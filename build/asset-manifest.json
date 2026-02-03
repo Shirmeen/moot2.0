@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/moot2.0/static/css/main.b6292799.css",
+    "main.js": "/moot2.0/static/js/main.0b6ace79.js",
+    "static/media/hero-bg.jpg": "/moot2.0/static/media/hero-bg.4cd967c261a66a82bde8.jpg",
+    "index.html": "/moot2.0/index.html",
+    "main.b6292799.css.map": "/moot2.0/static/css/main.b6292799.css.map",
+    "main.0b6ace79.js.map": "/moot2.0/static/js/main.0b6ace79.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b6292799.css",
+    "static/js/main.0b6ace79.js"
+  ]
+}

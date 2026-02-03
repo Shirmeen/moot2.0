@@ -48,6 +48,12 @@ const speakers = [
         image: "/speakers/shireen.png"
     },
     {
+        name: "Dr. Shazia Iqbal Khan",
+        role: "Moderator | Head of School IB TNS Beaconhouse Gulberg",
+        bio: "Dr. Shazia Iqbal Khan is a seasoned educator and visionary leader with over two decades of experience. A medical graduate turned education innovator, she has led multiple schools to IB accreditation and is the Chairperson of the IB Pakistan Association (2018 & 2025).",
+        image: "/speakers/shazia_new.png"
+    },
+    {
         name: "Mr. Abbas Husain",
         role: "Seasoned Corporate & Educational Policy Trainer",
         bio: "With over 30 years of experience, Abbas Husain is renowned internationally for his teacher training workshops across multiple countries.",
