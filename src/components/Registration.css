@@ -1,141 +1,327 @@
 .registration {
-    padding: 100px 20px;
-    background-color: var(--white);
+    padding: 120px 20px;
+    background: linear-gradient(135deg, #f8fbff 0%, #e1f5fe 100%);
     text-align: center;
     position: relative;
     overflow: hidden;
 }
 
-.registration::before {
+/* Dynamic floating particles for background */
+.registration::after {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(circle at 10% 20%, rgba(0, 169, 181, 0.05) 0%, transparent 50%);
+    width: 200%;
+    height: 200%;
+    background-image: radial-gradient(circle, var(--accent-color) 1px, transparent 1px);
+    background-size: 50px 50px;
+    opacity: 0.1;
+    z-index: 0;
     pointer-events: none;
+    animation: slowScroll 60s linear infinite;
+}
+
+@keyframes slowScroll {
+    from {
+        transform: translate(-25%, -25%);
+    }
+
+    to {
+        transform: translate(0, 0);
+    }
 }
 
 .registration h2 {
-    font-size: 2.8rem;
+    font-size: 3.2rem;
     margin-bottom: 20px;
-    color: var(--accent-color);
+    color: #1a1a1a;
     font-family: 'Outfit', sans-serif;
     font-weight: 800;
-}
-
-.registration>.container>p {
-    font-size: 1.1rem;
-    max-width: 600px;
-    margin: 0 auto 40px;
-    color: var(--dark-text);
-    opacity: 0.8;
-}
-
-.registration-card {
-    background: var(--white);
-    padding: 35px 25px;
-    border-radius: 25px;
-    box-shadow: var(--shadow-lg);
-    max-width: 480px;
-    margin: 0 auto;
-    border: 1px solid rgba(0, 169, 181, 0.1);
-    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     position: relative;
-    overflow: hidden;
+    z-index: 1;
 }
 
-.registration-card:hover {
-    transform: translateY(-10px);
-}
-
-.registration-logo-wrapper {
-    margin: 0 auto 30px;
-    max-width: 320px;
-    display: flex;
-    justify-content: center;
-    position: relative;
-}
-
-/* Attention-grabbing Ring around the Robot (Softer & Faded) */
-.registration-logo-wrapper::before {
+.registration h2::after {
     content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 130%;
-    height: 130%;
-    background: linear-gradient(45deg, var(--secondary-color), var(--accent-color), var(--primary-color), var(--secondary-color));
-    background-size: 400%;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-    z-index: -1;
-    filter: blur(25px);
-    opacity: 0.3;
-    animation: flowGradient 10s linear infinite;
-}
-
-.registration-logo-link {
     display: block;
-    width: 100%;
-    text-decoration: none;
-    cursor: pointer;
+    width: 100px;
+    height: 5px;
+    background: linear-gradient(90deg, #0984e3, #00cec9);
+    margin: 15px auto 0;
+    border-radius: 10px;
+}
+
+.registration .registration-subtitle {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 50px;
+    color: #555;
+    line-height: 1.6;
+    font-weight: 500;
+    letter-spacing: 0.5px;
     position: relative;
-    z-index: 2;
+    z-index: 1;
 }
 
-.registration-robot {
+/* Background Animated Shapes for Registration Card */
+.registration-bg-shapes {
+    position: absolute;
     width: 100%;
-    height: auto;
-    filter: drop-shadow(0 10px 20px rgba(0, 169, 181, 0.3));
-    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 0;
 }
 
-.registration-logo-link:hover .registration-robot {
-    transform: scale(1.1) translateY(-10px);
-    filter: drop-shadow(0 15px 30px rgba(0, 169, 181, 0.5));
+.reg-shape {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.15;
+    animation: floatAround 20s infinite alternate ease-in-out;
 }
 
-@keyframes flowGradient {
+.rs-1 {
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, #0984e3, transparent);
+    top: 10%;
+    left: -100px;
+    animation-delay: 0s;
+}
+
+.rs-2 {
+    width: 350px;
+    height: 350px;
+    background: radial-gradient(circle, #00cec9, transparent);
+    bottom: 0%;
+    right: -50px;
+    animation-delay: -5s;
+    animation-duration: 25s;
+}
+
+.rs-3 {
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, #6c5ce7, transparent);
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    animation-delay: -10s;
+    animation-duration: 30s;
+}
+
+@keyframes floatAround {
     0% {
-        background-position: 0% 50%;
+        transform: translate(0, 0) scale(1) rotate(0deg);
     }
 
-    50% {
-        background-position: 100% 50%;
+    33% {
+        transform: translate(50px, 30px) scale(1.1) rotate(120deg);
+    }
+
+    66% {
+        transform: translate(-30px, 50px) scale(0.9) rotate(240deg);
     }
 
     100% {
-        background-position: 0% 50%;
+        transform: translate(0, 0) scale(1) rotate(360deg);
     }
+}
+
+.registration-card {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(20px);
+    padding: 50px 40px;
+    border-radius: 40px;
+    box-shadow: 0 30px 60px rgba(0, 169, 181, 0.12);
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    /* For shine effect */
+}
+
+/* Moving Shine Effect */
+.registration-card::before {
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    width: 300%;
+    height: 300%;
+    background: linear-gradient(45deg,
+            transparent 0%,
+            transparent 40%,
+            rgba(255, 255, 255, 0.4) 50%,
+            transparent 60%,
+            transparent 100%);
+    transition: all 0.8s;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.registration-card:hover::before {
+    top: 100%;
+    left: 100%;
+}
+
+.registration-card-icon {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(135deg, rgba(9, 132, 227, 0.1), rgba(0, 206, 201, 0.1));
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 30px;
+    color: var(--accent-color);
+    box-shadow: inset 0 0 20px rgba(0, 169, 181, 0.05);
+    animation: float-icon 4s ease-in-out infinite;
+}
+
+@keyframes float-icon {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-10px) rotate(5deg);
+    }
+}
+
+.cta-vibe {
+    background: rgba(0, 169, 181, 0.1);
+    color: var(--accent-color);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(0, 169, 181, 0.2);
+}
+
+.cta-vibe svg {
+    color: #f1c40f;
 }
 
 .registration-card h3 {
-    font-size: 1.8rem;
-    color: var(--deep-navy);
-    margin: 15px 0;
-    font-family: 'Outfit', sans-serif;
+    font-size: 2.2rem;
+    color: #1a1a1a;
+    margin-bottom: 15px;
+    font-weight: 800;
 }
 
 .registration-card p {
-    font-size: 1rem;
-    color: #666;
-    line-height: 1.6;
-    margin-bottom: 20px;
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 40px;
 }
 
+.register-btn-modern {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    background: linear-gradient(135deg, #0984e3, #00cec9);
+    color: white;
+    padding: 22px 50px;
+    border-radius: 60px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    transition: all 0.4s ease;
+    box-shadow: 0 15px 35px rgba(9, 132, 227, 0.3);
+    margin: 0 auto;
+    width: fit-content;
+    position: relative;
+}
 
-@media (max-width: 768px) {
-    .registration {
-        padding: 80px 20px;
+.register-btn-modern:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 20px 45px rgba(9, 132, 227, 0.45);
+    letter-spacing: 1px;
+}
+
+.register-btn-modern svg {
+    transition: transform 0.4s ease;
+}
+
+.register-btn-modern:hover svg {
+    transform: translateX(8px);
+}
+
+/* The Intense Pulse Animation */
+.pulse-animation {
+    animation: intensePulse 2s infinite;
+}
+
+@keyframes intensePulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(9, 132, 227, 0.6);
     }
 
+    70% {
+        box-shadow: 0 0 0 25px rgba(9, 132, 227, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(9, 132, 227, 0);
+    }
+}
+
+.registration-footer {
+    margin-top: 30px;
+}
+
+.spots-left {
+    color: #d63031;
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    animation: flashInfo 2s infinite;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+@keyframes flashInfo {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.6;
+    }
+}
+
+@media (max-width: 768px) {
     .registration h2 {
         font-size: 2.2rem;
     }
 
     .registration-card {
-        padding: 35px 20px;
+        padding: 40px 25px;
+    }
+
+    .register-btn-modern {
+        padding: 18px 35px;
+        font-size: 1.1rem;
+    }
+
+    .registration-card h3 {
+        font-size: 1.8rem;
     }
 }
