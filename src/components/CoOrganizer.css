@@ -1,9 +1,13 @@
 .co-organizer-section {
     padding: 0 20px 100px;
-    background: #ffffff;
+    background: transparent;
     display: flex;
     justify-content: center;
+    position: relative;
+    z-index: 2;
 }
+
+/* Background elements handled by wrapper in App.js */
 
 .co-organizer-card {
     max-width: 1000px;

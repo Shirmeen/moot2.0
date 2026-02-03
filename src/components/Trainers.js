@@ -16,13 +16,13 @@ const trainers = [
         image: "/speakers/shazia_new.png"
     },
     {
-        name: "Farah Masood",
+        name: "Ms. Farah Masood",
         role: "Panelist | Head of School - Learning Alliance International",
         bio: "Farah Masood is a seasoned IB practitioner and accomplished school leader with over three decades of experience. As Head of School at Learning Alliance International, she has led diverse academic teams and served as Chairperson of the Executive Committee of IBPAK from 2023 to 2025.",
         image: "/speakers/farah_masood_new.png"
     },
     {
-        name: "Taimur K Bandey",
+        name: "Mr. Taimur K Bandey",
         role: "Trainer & Panelist | Head of School Trinity School",
         bio: "Taimur K Bandey is Head of School at Trinity (IB, Cambridge and American High School), Lahore. An IB consultant with 25+ years of experience, he is a former member of the national commission for curriculum development for the Government of Pakistan.",
         workshop: "REIMAGINING THE IB EDUCATION",
@@ -30,19 +30,19 @@ const trainers = [
         customClass: "center-taimur"
     },
     {
-        name: "Amina Amir-ud-Din Chughtai",
+        name: "Ms. Amina Amir-ud-Din Chughtai",
         role: "Trainer",
         bio: "Amina holds a PGCEi from Canterbury Christchurch University, UK, and a certificate in SUSI from California State University, USA. She is an accredited Cambridge International Trainer for Enrichment Programmes and a Cambridge PDQ programme leader with over 23 years of experience in teaching and training.",
         image: "/speakers/amina_new.png"
     },
     {
-        name: "Asma Amanat",
+        name: "Ms. Asma Amanat",
         role: "Trainer & Panelist",
         bio: "Ms. Asma Amanat has joined Crescent as General Manager of MYP and DP, bringing 16 years of experience in IB education. A seasoned IB practitioner and international academic author, her research has been featured in the European Journal of Education.",
         image: "/speakers/asma_new.png"
     },
     {
-        name: "Tina Hameed",
+        name: "Ms. Tina Hameed",
         role: "Trainer & Panelist",
         bio: "Tina Hameed is the founding Director of the Teaching and Learning Centre (TLC) at Aitchison College. She has been teaching and training for 37 years and is an accredited tutor from the University of Bradford.",
         workshop: "Learning that Lasts",
@@ -56,14 +56,14 @@ const trainers = [
         image: "/speakers/iain.png"
     },
     {
-        name: "Urooj Shahab",
+        name: "Ms. Urooj Shahab",
         role: "PYP Coordinator Beaconhouse Newlands Lahore",
         bio: "Urooj Shahab is a PYP Coordinator, IBEN Workshop & Programme Leader, with 15 years of experience in education. She specializes in building and leading PYP frameworks that prioritize creative inquiry. Holding a Master's in Art Education, she believes learning is an evolving journey, not a destination. As a ceramic artist, she thrives on creative problem-solving and brings the same patient, hands-on approach to teacher training, curriculum design, and teaching. She views the collaborative energy of shaping education as akin to creating art.",
         workshop: "Leading Learning the IB Way",
         image: "/speakers/urooj_shahab_new.png"
     },
     {
-        name: "Fatima Ali",
+        name: "Ms. Fatima Ali",
         role: "MYP Coordinator Beaconhouse Newlands Lahore",
         bio: "Fatima Ali is an accomplished IB leader and educational strategist with over a decade of experience across the PYP, MYP, and DP frameworks. Currently an IB MYP Coordinator, she drives curriculum alignment, programme quality, and collaborative planning. A recognized IB Educator Network (IBEN) member and DP Examiner for Digital Society and the Extended Essay, she has also contributed as an IB Curriculum Developer. Specializing in interdisciplinary unit design, Service as Action, and embedding ATL skills, Fatima combines research-based insights with practical expertise. She is pursuing an EdD and holds a Harvard Business School Online Certificate in School Management and Leadership.",
         workshop: "From Transdisciplinary to Interdisciplinary Learning in the IB Continuum: Understanding and Implementing Interdisciplinary Teaching in the MYP",

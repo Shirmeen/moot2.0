@@ -3,13 +3,13 @@ import './Panelists.css';
 
 const panelists = [
     {
-        name: "Mr. Sabahat Tatari",
+        name: "Ms. Sabahat Tatari",
         role: "Regional Director, Northern Region, The City School, Islamabad",
         bio: "Ms Tatari is an alumnus of Warwick University and certified member of IB Education Network has been an academician for past three decades. She has served institutions including Aga Khan University, Beaconhouse National University, Angels International College IB Continuum School and The City School Network. Her areas of interest include AI in education, innovation , testing, and test development. Currently Regional Director of the City School network managing 42 schools across three provinces, Punjab, KPK, AJK and Islamabad Capital Territory",
         image: "/speakers/sabahat_tatari_new.png"
     },
     {
-        name: "SM Omair Saeed",
+        name: "Mr. SM Omair Saeed",
         role: "Managing Director Kifayat Publishers",
         bio: "SM Omair Saeed, Managing Director of Kifayat Publishers, is a graduate in Industrial Economics Research from the University of Nottingham. He has worked on education research and curriculum development for the unlettered with the World Bank and the Asian Development Bank. For the last decade, he has been looking after the overall operations at Kifayat Publishers; he has a keen interest in Education Pedagogy research, and in recent years, through international partnerships, has tried to bring the best of the latest international educational resources to Pakistan at an affordable price.",
         image: "/speakers/omair_saeed_new.png"

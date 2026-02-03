@@ -47,8 +47,27 @@ function App() {
       <Navbar activeSection={activeSection} />
       <Hero />
       <About />
-      <Organizer />
-      <CoOrganizer />
+      <div className="organizers-section-wrapper">
+        <div className="organizer-bg-elements">
+          <div className="bg-shape shape-1"></div>
+          <div className="bg-shape shape-2"></div>
+          <div className="bg-shape shape-3"></div>
+          <ul className="background-circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+        <Organizer />
+        <CoOrganizer />
+      </div>
       <Details />
       <Speakers />
       <Trainers />

@@ -1,8 +1,69 @@
+.organizers-section-wrapper {
+    background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 50%, #f0f9ff 100%);
+    position: relative;
+    overflow: hidden;
+}
+
 .organizer-section {
-    padding: 100px 20px;
-    background: #ffffff;
+    padding: 100px 20px 50px;
+    /* Reduced bottom padding */
+    background: transparent;
     display: flex;
     justify-content: center;
+    position: relative;
+    z-index: 2;
+}
+
+.organizer-bg-elements {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.bg-shape {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.6;
+}
+
+.shape-1 {
+    width: 500px;
+    height: 500px;
+    background: rgba(0, 77, 44, 0.08);
+    /* Primary green */
+    top: -150px;
+    left: -150px;
+    animation: float 8s ease-in-out infinite;
+}
+
+.shape-2 {
+    width: 400px;
+    height: 400px;
+    background: rgba(0, 169, 181, 0.08);
+    /* Teal */
+    bottom: -100px;
+    right: -100px;
+    animation: float 7s ease-in-out infinite reverse;
+}
+
+.shape-3 {
+    width: 300px;
+    height: 300px;
+    background: rgba(212, 175, 55, 0.08);
+    /* Gold */
+    top: 40%;
+    left: 15%;
+    animation: pulse-soft 5s infinite;
+}
+
+.organizer-section .container {
+    position: relative;
+    z-index: 2;
 }
 
 .organizer-card {
@@ -117,5 +178,133 @@
 
     .organizer-bio {
         font-size: 1rem;
+    }
+}
+
+/* Floating Circles Animation */
+.background-circles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.background-circles li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(0, 169, 181, 0.2);
+    /* Teal base */
+    animation: animate-circles 25s linear infinite;
+    bottom: -150px;
+    border-radius: 50%;
+    /* Make them circles */
+}
+
+/* Specific styling for each circle to create variety */
+.background-circles li:nth-child(1) {
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+    background: rgba(0, 77, 44, 0.15);
+    /* Green */
+}
+
+.background-circles li:nth-child(2) {
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+    background: rgba(212, 175, 55, 0.2);
+    /* Gold */
+}
+
+.background-circles li:nth-child(3) {
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.background-circles li:nth-child(4) {
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+    background: rgba(0, 169, 181, 0.15);
+}
+
+.background-circles li:nth-child(5) {
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.background-circles li:nth-child(6) {
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+    background: rgba(212, 175, 55, 0.1);
+    /* Gold */
+}
+
+.background-circles li:nth-child(7) {
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+    background: rgba(0, 77, 44, 0.1);
+}
+
+.background-circles li:nth-child(8) {
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.background-circles li:nth-child(9) {
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+    background: rgba(0, 169, 181, 0.3);
+}
+
+.background-circles li:nth-child(10) {
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+    background: rgba(0, 77, 44, 0.1);
+}
+
+@keyframes animate-circles {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100% {
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
     }
 }
