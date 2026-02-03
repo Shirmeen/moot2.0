@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/moot2.0/static/css/main.a7eadac1.css",
-    "main.js": "/moot2.0/static/js/main.a91e2bad.js",
+    "main.css": "/moot2.0/static/css/main.b6292799.css",
+    "main.js": "/moot2.0/static/js/main.0b6ace79.js",
     "static/media/hero-bg.jpg": "/moot2.0/static/media/hero-bg.4cd967c261a66a82bde8.jpg",
     "index.html": "/moot2.0/index.html",
-    "main.a7eadac1.css.map": "/moot2.0/static/css/main.a7eadac1.css.map",
-    "main.a91e2bad.js.map": "/moot2.0/static/js/main.a91e2bad.js.map"
+    "main.b6292799.css.map": "/moot2.0/static/css/main.b6292799.css.map",
+    "main.0b6ace79.js.map": "/moot2.0/static/js/main.0b6ace79.js.map"
   },
   "entrypoints": [
-    "static/css/main.a7eadac1.css",
-    "static/js/main.a91e2bad.js"
+    "static/css/main.b6292799.css",
+    "static/js/main.0b6ace79.js"
   ]
 }
