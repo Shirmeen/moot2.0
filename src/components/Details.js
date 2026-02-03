@@ -21,7 +21,9 @@ function Details() {
       ),
       items: [
         { label: 'Start:', value: 'February 13, 2026 at 9:00 AM' },
-        { label: 'End:', value: 'February 15, 2026 at 4:30 PM' }
+        { label: 'End:', value: 'February 15, 2026 at 4:30 PM' },
+        { label: 'Duration:', value: '3 Full Days' },
+        { label: 'Policy:', value: 'Access for Registered Attendees' }
       ]
     },
     {
@@ -37,37 +39,8 @@ function Details() {
         { label: '', value: 'Crescent Model Higher Secondary School' },
         { label: '', value: 'Girls Campus' },
         { label: '', value: 'Lahore, Punjab, Pakistan' }
-      ]
-    },
-    {
-      id: 3,
-      title: 'Organizer',
-      icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-          <circle cx="9" cy="7" r="4"></circle>
-          <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-          <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-        </svg>
-      ),
-      items: [
-        { label: '', value: 'Crescent Girls' }
-      ]
-    },
-    {
-      id: 4,
-      title: 'Timezone',
-      icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <circle cx="12" cy="12" r="10"></circle>
-          <line x1="2" y1="12" x2="22" y2="12"></line>
-          <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-        </svg>
-      ),
-      items: [
-        { label: '', value: 'Pakistan Standard Time (PKT)' },
-        { label: '', value: 'UTC+5:00' }
-      ]
+      ],
+      mapLink: 'https://www.google.com/maps/place/The+Crescent+College+Lahore.+Girls+Campus/@31.5340203,74.322501,16z/data=!4m10!1m2!2m1!1screscent+model+girls+campus+address!3m6!1s0x39190523aa5dd1db:0xf2ae04c5cc27920c!8m2!3d31.5340203!4d74.3315132!15sCiNjcmVzY2VudCBtb2RlbCBnaXJscyBjYW1wdXMgYWRkcmVzcyICSAFaHSIbY3Jlc2NlbnQgbW9kZWwgZ2lybHMgY2FtcHVzkgEHY29sbGVnZZoBRENpOURRVWxSUVVOdlpFTm9kSGxqUmpsbVQydHZNMDFUTVVKa1NHaHZWbGN4U1ZWdVZuRlZlbXhhVFhwa2FXVlhZeEFC4AEA-gEECAAQFw!16s%2Fg%2F11s8h4f578?entry=ttu&g_ep=EgoyMDI2MDExMy4wIKXMDSoASAFQAw%3D%3D'
     }
   ];
 
@@ -89,6 +62,21 @@ function Details() {
                   {item.value}
                 </p>
               ))}
+              {detail.mapLink && (
+                <a
+                  href={detail.mapLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="details-map-button"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon>
+                    <line x1="8" y1="2" x2="8" y2="18"></line>
+                    <line x1="16" y1="6" x2="16" y2="22"></line>
+                  </svg>
+                  Get Directions
+                </a>
+              )}
             </div>
           ))}
         </div>
