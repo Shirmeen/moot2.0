@@ -267,9 +267,7 @@
     transition: transform 0.4s ease;
 }
 
-.panelist-card:hover .panelist-image {
-    transform: scale(1.08);
-}
+
 
 .panelist-info {
     width: 100%;

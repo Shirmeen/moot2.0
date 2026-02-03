@@ -229,9 +229,7 @@
     transition: transform 0.5s ease;
 }
 
-.speaker-card:hover .speaker-image {
-    transform: scale(1.1);
-}
+
 
 .speaker-info h3 {
     font-size: 1.5rem;
@@ -311,4 +309,9 @@
     .speaker-card.keynote-card h3 {
         font-size: 1.8rem;
     }
+}
+
+.shireen-card .speaker-image,
+.tayyabah-card .speaker-image {
+    object-position: center 5%;
 }

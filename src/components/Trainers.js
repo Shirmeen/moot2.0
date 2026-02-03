@@ -34,7 +34,8 @@ const trainers = [
         name: "Ms. Asma Amanat",
         role: "Trainer & Panelist",
         bio: "Ms. Asma Amanat has joined Crescent as General Manager of MYP and DP, bringing 16 years of experience in IB education. A seasoned IB practitioner and international academic author, her research has been featured in the European Journal of Education.",
-        image: "/speakers/asma_new.png"
+        image: "/speakers/asma_new.png",
+        customClass: "asma-card"
     },
     {
         name: "Ms. Tina Hameed",

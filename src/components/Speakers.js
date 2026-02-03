@@ -39,13 +39,15 @@ const speakers = [
         name: "Ms. Tayyabah Amer Malik",
         role: "Experienced Academic Leader",
         bio: "Tayyabah Amer Malik has a demonstrated history of working in the education management industry. Skilled in Coaching, curriculum development, education planning, and Conflict Resolution, she holds a Masters Degree in Advance Professional Studies from University of Strathclyde.",
-        image: "/speakers/tayyabah.png"
+        image: "/speakers/tayyabah.png",
+        customClass: "tayyabah-card"
     },
     {
         name: "Ms. Shireen Naqvi",
         role: "Workshop Facilitator & Coach",
         bio: "Shireen Naqvi is a highly respected figure known for her personal and professional credibility. An expert in diversity and inclusion, she has worked with 300+ organizations, received awards, and founded the School of Leadership.",
-        image: "/speakers/shireen.png"
+        image: "/speakers/shireen.png",
+        customClass: "shireen-card"
     },
     {
         name: "Dr. Shazia Iqbal Khan",
