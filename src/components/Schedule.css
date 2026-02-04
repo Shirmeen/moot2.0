@@ -314,12 +314,100 @@
     stroke-width: 2.5;
 }
 
+.schedule-card.clickable {
+    cursor: pointer;
+}
+
+.expand-hint {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #0984e3;
+    opacity: 0.8;
+}
+
+.is-expanded .schedule-card {
+    border-color: #0984e3;
+    background: white;
+    box-shadow: 0 30px 60px rgba(0, 169, 181, 0.15);
+}
+
+/* Detailed Schedule Slider */
+.day-details-slider {
+    padding: 0 30px 30px;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    background: rgba(248, 251, 255, 0.5);
+    animation: slideInDown 0.4s ease-out;
+}
+
+.table-responsive {
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 700px;
+    /* Force scroll on mobile */
+    font-size: 1.1rem;
+}
+
+.schedule-table th {
+    text-align: left;
+    padding: 15px 20px;
+    background: rgba(9, 132, 227, 0.08);
+    color: #000000;
+    font-weight: 800;
+    font-size: 1.2rem;
+    border-bottom: 3px solid rgba(9, 132, 227, 0.2);
+}
+
+.schedule-table td {
+    padding: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    vertical-align: top;
+    color: #4b5563;
+    line-height: 1.5;
+}
+
+.schedule-table tr:hover td {
+    background: rgba(9, 132, 227, 0.02);
+}
+
+.time-cell {
+    font-weight: 800;
+    color: #0984e3;
+    white-space: nowrap;
+    width: 180px;
+}
+
+.segment-cell {
+    font-weight: 700;
+    color: #1a1a1a;
+}
+
+@keyframes slideInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 @media (max-width: 768px) {
     .day-block {
         padding-left: 0;
         padding-top: 50px;
         flex-direction: column;
         align-items: flex-start;
+    }
+
+    .day-details-slider {
+        padding: 0 15px 20px;
     }
 
     .day-label {
@@ -329,7 +417,6 @@
         top: 0;
         left: 0;
         transform: none;
-        /* Remove centering/alignment transforms */
         border-radius: 12px;
         font-size: 0.8rem;
     }
@@ -341,10 +428,16 @@
 
     .card-header {
         padding: 12px 20px;
+        flex-wrap: wrap;
+        gap: 10px;
     }
 
     .card-body {
         padding: 20px;
+    }
+
+    .time-cell {
+        width: 120px;
     }
 }
 

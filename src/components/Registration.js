@@ -32,7 +32,7 @@ function Registration() {
                         <p>Be part of Lahore's most awaited academic event. Secure your place now and connect with brilliant minds.</p>
 
                         <a
-                            href="https://docs.google.com/forms/d/e/1FAIpQLSfKZcsuDRRvHnJhaUJERrYWMk2bXpdHmi47YZX5PmODPSS5OQ/viewform"
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSfKZcsuDRRvHnJhaUJERrYWMk2bXpdhmi47YZX5PmODPSS5OQ/viewform"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="register-btn-modern pulse-animation"
