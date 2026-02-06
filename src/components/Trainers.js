@@ -102,6 +102,12 @@ const trainers = [
         role: "Trainer | Headmistress PYP Upper Primary, Crescent Model School",
         bio: "Benish Sarwar is an experienced education professional with over two decades in the field, beginning her career as an early years educator and progressing into leadership roles across primary classes up to Grade VI. Beyond the classroom, she has served as a trainer for Early Years Education (EYE) and Postgraduate Diploma in Education (PGDC) programs, mentoring and inspiring future educators. A dedicated lifelong learner, she actively contributed to the IB authorization process, implementing student-led strategies to strengthen teaching and learning.",
         image: "/speakers/benish_sarwar.jpeg"
+    },
+    {
+        name: "Dr. Naumana Amjad",
+        role: "Trainer | Psychologist | Academic Leader & Mental Health Advocate",
+        bio: "Dr. Naumana Amjad is an accomplished psychologist with 35+ years in academia and clinical practice. She served as Professor at Punjab University for 27 years before becoming Dean at NUR International University, where she founded Wellbeing Centers and flagship psychology programs. An Annemarie Schimmel Scholar with a PhD in Psychology from the University of Warwick, her work has been published internationally and she has conducted professional trainings nationwide on extremism, gender equity, and workplace safety. Alongside academic work, she leads community mental health initiatives and anti-narcotics advocacy programs. She is fluent in English, Urdu, Punjabi and French.",
+        image: "/speakers/naumana_amjad.jpeg"
     }
 ];
 
