@@ -323,3 +323,7 @@
         display: none;
     }
 }
+
+.panelist-image.asma-card {
+    object-position: center 5%;
+}

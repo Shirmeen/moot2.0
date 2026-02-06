@@ -19,6 +19,43 @@ const panelists = [
         role: "Dean, Syed Ahsan Ali and Syed Maratib Ali School of Education",
         bio: "Professor Dr. Tayyaba Tamim is currently Dean and Chair Syeda Perwin Babar Ali at Syed Ahsan Ali and Syed Babar Ali School of Education, Lahore University of Management Sciences (LUMS). Her work, published and presented at national and international forums, covers issues of social justice, equity and inclusivity in education with specific reference to languages in education, language policy, gender and caste. Her ongoing research also explores how education are filtered through class, gender, caste and disability. She also has a strong interest in education for sustainable development and higher education. Dr Tamim has led several funded research projects and publications with national and international partners and forums, including those with USAID, British council, the World Bank, Gates Foundation and IDEAS.",
         image: "/speakers/tayyaba_tamim_new.png"
+    },
+    {
+        name: "Ms. Farah Masood",
+        role: "Head of School, Learning Alliance International",
+        bio: "Farah Masood is a seasoned IB practitioner and accomplished school leader with over three decades of experience in education. Her leadership impact extended nationally through her role on the Executive Committee of IBPAK, where she served as Chairperson from 2023 to 2025.",
+        image: "/speakers/farah_masood_new.png"
+    },
+    {
+        name: "Mr. Taimur K Bandey",
+        role: "Head of School, Trinity School",
+        bio: "Taimur K Bandey is an IB consultant with extensive experience in establishing IB programmes across schools in Pakistan. He is a former member of the national commission for curriculum development for the Government of Pakistan.",
+        image: "/speakers/taimur_new.png"
+    },
+    {
+        name: "Dr. Iain Riley",
+        role: "Head of School, TNS Beaconhouse, DHA",
+        bio: "Dr. Iain Riley holds a PhD in Education from University of Glasgow and has over ten years of leadership experience, including Head of School roles in Shanghai. He is a strong advocate for learner agency.",
+        image: "/speakers/iain.png"
+    },
+    {
+        name: "Ms. Tina Hameed",
+        role: "Director, Teaching and Learning Centre, Aitchison College",
+        bio: "Tina Hameed is the founding Director of the Teaching and Learning Centre at Aitchison College and has been teaching and training for 37 years.",
+        image: "/speakers/tina.png"
+    },
+    {
+        name: "Ms. Asma Amanat",
+        role: "General Manager MYP & DP, Crescent Model",
+        bio: "Ms. Asma Amanat is a seasoned IB practitioner, examiner, and workshop leader with 16 years of experience. She is an international academic author and researcher.",
+        image: "/speakers/asma_new.png",
+        customClass: "asma-card"
+    },
+    {
+        name: "Ms. Naveen Balkhi",
+        role: "Board Director & Executive Coach",
+        bio: "Naveen Balkhi has 27+ years of impact with Boards, educators, and CxOs across 17 countries, focusing on leadership development and sustainable practices.",
+        image: "/speakers/naveen.png"
     }
 ];
 
@@ -34,7 +71,7 @@ const Panelists = () => {
                     {panelists.map((panelist, index) => (
                         <div className="panelist-card" key={index}>
                             <div className="panelist-image-container">
-                                <img src={process.env.PUBLIC_URL + panelist.image} alt={panelist.name} className="panelist-image" />
+                                <img src={process.env.PUBLIC_URL + panelist.image} alt={panelist.name} className={`panelist-image ${panelist.customClass || ''}`} loading="lazy" />
                             </div>
                             <div className="panelist-info">
                                 <span className="panelist-role">{panelist.role}</span>

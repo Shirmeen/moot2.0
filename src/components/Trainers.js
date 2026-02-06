@@ -70,6 +70,32 @@ const trainers = [
         role: "Educationist and Entrepreneur",
         bio: "Mr. Jazib is the Director of the LUMS Center for Entrepreneurship and LUMSx the online learning platform. His work experience spans managing software teams for organizations like Sesame Workshop and BBC, bringing solar energy to Pakistan and working with think tanks and investors in education. His AI experience includes conducting trainings for schools across Pakistan and training global organizations like Coca Cola and Hewlett Packard. He has a BS Electrical Engineering from Stanford and an Ed.M. Technology, Innovation and Education from Harvard.",
         image: "/speakers/jazib_zahir_new.png"
+    },
+    {
+        name: "Ms. Naveen Balkhi",
+        role: "Trainer & Panelist | Board Director",
+        bio: "Naveen Balkhi is a United Nations CSW Speaker and JPMorganChase Wall Street Investment Banker with 27+ years of impact. She specializes in Executive Coaching, Leadership Development, and Women’s Leadership.",
+        image: "/speakers/naveen.png"
+    },
+    {
+        name: "Ms. Tayyabah Amer Malik",
+        role: "Trainer | Executive Manager K–8 Education",
+        bio: "Tayyabah Amer Malik is a seasoned educational leader at Pak-Turk Maarif International Schools. She specializes in curriculum leadership and school improvement, leading large-scale professional development programs.",
+        workshop: "From Learning Theories to IB Practice: Why We Teach the Way We Teach",
+        image: "/speakers/tayyabah.png"
+    },
+    {
+        name: "Dr. Shireen Naqvi",
+        role: "Trainer | Workshop Facilitator & Coach",
+        bio: "Dr. Shireen Naqvi is a highly respected figure in diversity and inclusion. Founder of the School of Leadership, she has worked with over 300 organizations and has received multiple awards for her impact on professional development.",
+        workshop: "Empowering Explorers: Nurturing Student Autonomy",
+        image: "/speakers/shireen.png"
+    },
+    {
+        name: "Mr. Abbas Husain",
+        role: "Trainer | Managing Director Teachers’ Development Centre",
+        bio: "With over 30 years of experience, Abbas Husain is a seasoned corporate and educational policy trainer, renowned internationally for his teacher training workshops.",
+        image: "/speakers/abbas.png"
     }
 ];
 
@@ -85,7 +111,7 @@ const Trainers = () => {
                     {trainers.map((trainer, index) => (
                         <div className="trainer-card" key={index}>
                             <div className="trainer-image-container">
-                                <img src={process.env.PUBLIC_URL + trainer.image} alt={trainer.name} className={`trainer-image ${trainer.customClass || ''}`} />
+                                <img src={process.env.PUBLIC_URL + trainer.image} alt={trainer.name} className={`trainer-image ${trainer.customClass || ''}`} loading="lazy" />
                             </div>
                             <div className="trainer-info">
                                 <span className="trainer-role">{trainer.role}</span>

@@ -312,6 +312,12 @@
 }
 
 .shireen-card .speaker-image,
-.tayyabah-card .speaker-image {
+.tayyabah-card .speaker-image,
+.asma-card .speaker-image,
+.umar-card .speaker-image {
     object-position: center 5%;
+}
+
+.taimoor-card .speaker-image {
+    object-position: 60% 5%;
 }

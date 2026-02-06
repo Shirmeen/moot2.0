@@ -7,7 +7,7 @@ const Organizer = () => {
             <div className="container">
                 <div className="organizer-card">
                     <div className="organizer-image-container">
-                        <img src={process.env.PUBLIC_URL + '/speakers/sofia.png'} alt="Miss Sofia Qadir Khan" className="organizer-image" />
+                        <img src={process.env.PUBLIC_URL + '/speakers/sofia.png'} alt="Miss Sofia Qadir Khan" className="organizer-image" loading="lazy" />
                     </div>
                     <div className="organizer-info">
                         <span className="organizer-label">The Organizer</span>

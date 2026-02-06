@@ -66,6 +66,70 @@ const speakers = [
         role: "Science Communicator",
         bio: "Science has the power to change lives, and Hassaan Fareed has made it his mission to bring that power to every corner of Pakistan. As a passionate science communicator, he creates interactive shows filled with exciting experiments and hands-on activities. From bustling cities to remote villages, Hassan Fareed travels widely to spark curiosity and wonder among children and communities. Along the way, he has partnered with Lincoln Corners, Tedx, Tareen Education Foundation and Lahore Astronomical Society, Khawarizmi Science Society and many more to expand the reach of STEM education. Hassaan Fareed believes that science belongs to everyone and makes sure that every session proves it.",
         image: "/speakers/hassaan_fareed_new.png"
+    },
+    {
+        name: "Ms. Rabia Najam",
+        role: "Principal, Crescent Model Higher Secondary School Boys Campus",
+        bio: "Rabia Najam, an esteemed education leader, currently serves as the Principal of Crescent Model Higher Secondary School Boys Campus. Her career is marked by leadership and strategic acumen, focusing on effective team building and problem-solving. She has introduced internationally recognized professional development opportunities for teachers and heads, driving excellence in educational standards.",
+        image: "/speakers/rabia_najam.jpeg"
+    },
+    {
+        name: "Ms. Shehla Sajid",
+        role: "Moderator | Headmistress - Middle Section Girls",
+        bio: "With over two decades of experience, Ms. Shehla Sajid has successfully coached numerous educators, empowering them with skills to engage students effectively. She holds a Masters in English Language Teaching and certifications from UK universities, and is an active presenter at national and international conferences.",
+        image: "/speakers/shehla_sajid.jpeg"
+    },
+
+    {
+        name: "Dr. Muhammad Sabieh Anwar",
+        role: "Professor of Physics, LUMS",
+        bio: "Dr. Muhammad Sabieh Anwar is a Professor of Physics and former Dean at LUMS. A Rhodes Scholar with a PhD from Oxford, he has published nearly 100 research papers. He is a founder of PhysLab and Astrolab, and serves as General Secretary of the Khwarizmi Science Society.",
+        image: "/speakers/sabieh_anwar.png"
+    },
+    {
+        name: "Mr. Taimoor K. Mumtaz",
+        role: "Senior Architect & Director, Hast-o-Neest",
+        bio: "Taimoor K. Mumtaz is a senior architect and founding director of Hast-o-Neest – Institute of Traditional Studies & Arts. His work promotes the study of traditional art, culture, and architecture, with a specific focus on Mughal design methods.",
+        image: "/speakers/taimoor_mumtaz.png",
+        customClass: "taimoor-card"
+    },
+    {
+        name: "Mr. Umar Saeed",
+        role: "Architect & Chair, CAA Education",
+        bio: "Umar Saeed is a prominent architect and educator, serving as Chair of Education and Validation at the Commonwealth Association of Architects. With over 25 years of experience, he leads Saeed Akhtar Studio and plays a key role in shaping architectural education policy in Pakistan.",
+        image: "/speakers/umar_saeed.png",
+        customClass: "umar-card"
+    },
+    {
+        name: "Ms. Khadija Balkhi",
+        role: "Director, Global Sustainability",
+        bio: "An award-winning thought leader and trusted advisor to boards & C-Suite, Khadeeja is a partner to front-line teams, youth & leaders alike. Contributing across corporate, gov., education, and nonprofit sectors for 21+ years, her work has supported entities including The Lyceum School, GRI, Coca-Cola, OMV, National Foods, ICI, Puma, WWF & others. She has published 400+ articles, covers, and book chapters in international publications including Forbes, Newsweek, Arab News, The National, Herald, and Saudi Gazette.",
+        image: "/speakers/khadija_balkhi.jpeg"
+    },
+    {
+        name: "Ms. Farah Masood",
+        role: "Head of School | IB Specialist",
+        bio: "Farah Masood is a seasoned IB practitioner and school leader with over 30 years of experience. As Head of School at Learning Alliance International and former Chairperson of IBPAK, she has significantly influenced the growth of IB education in Pakistan.",
+        image: "/speakers/farah_masood_new.png"
+    },
+    {
+        name: "Mr. Taimur K Bandey",
+        role: "Head of School | IB Consultant",
+        bio: "Taimur K Bandey is the Head of School at Trinity (IB, Cambridge and American High School). A consultant with 25+ years of experience, he has established IB programmes across Pakistan and advised on national curriculum development.",
+        image: "/speakers/taimur_new.png"
+    },
+    {
+        name: "Dr. Iain Riley",
+        role: "Head of School, TNS Beaconhouse",
+        bio: "Dr. Iain Riley holds a PhD in Education and has over a decade of leadership experience across Turkey, Japan, Egypt, and Scotland. He is a strong advocate for learner agency and progressive school culture.",
+        image: "/speakers/iain.png"
+    },
+    {
+        name: "Ms. Asma Amanat",
+        role: "GM MYP & DP | Academic Author",
+        bio: "Ms. Asma Amanat is a seasoned IB practitioner and examiner with 16 years of experience. An international academic author, her research has been featured in the European Journal of Education.",
+        image: "/speakers/asma_new.png",
+        customClass: "asma-card"
     }
 ];
 
@@ -82,7 +146,7 @@ const Speakers = () => {
                         <div className={`speaker-card ${speaker.customClass || ''}`} key={index}>
                             <div className="speaker-image-container">
                                 {speaker.image ? (
-                                    <img src={process.env.PUBLIC_URL + speaker.image} alt={speaker.name} className="speaker-image" />
+                                    <img src={process.env.PUBLIC_URL + speaker.image} alt={speaker.name} className="speaker-image" loading="lazy" />
                                 ) : (
                                     <div className="speaker-placeholder">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
