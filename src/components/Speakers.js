@@ -58,7 +58,7 @@ const speakers = [
     {
         name: "Mr. Abbas Husain",
         role: "Seasoned Corporate & Educational Policy Trainer",
-        bio: "With over 30 years of experience, Abbas Husain is renowned internationally for his teacher training workshops across multiple countries.",
+        bio: "With over 30 years of experience, Abbas Husain is a seasoned corporate and educational policy trainer. Abbas is renowned internationally for his teacher training workshops across multiple countries. In 2020, he was honored with a Lifetime Achievement Award by the Millennium Institute for Professional Development, Islamabad, presented by Dr. A. Q Khan.",
         image: "/speakers/abbas.png"
     },
     {
@@ -130,6 +130,12 @@ const speakers = [
         bio: "Ms. Asma Amanat is a seasoned IB practitioner and examiner with 16 years of experience. An international academic author, her research has been featured in the European Journal of Education.",
         image: "/speakers/asma_new.png",
         customClass: "asma-card"
+    },
+    {
+        name: "Mr. Todd Shea",
+        role: "Founder, CDRS | Global Humanitarian Leader",
+        bio: "Todd Shea is a musician turned humanitarian whose life changed after 9/11. Inspired by personal loss and global tragedy, he founded CDRS, leading disaster relief and medical missions worldwide. Todd and his team have responded to earthquakes, floods, tsunamis, hurricanes, and conflict across Pakistan, Haiti, Japan, Sri Lanka, Syria, the Philippines, the US, and beyond; providing healthcare, clean water, shelter, and long term community support.",
+        image: "/speakers/todd_shea.png"
     }
 ];
 
