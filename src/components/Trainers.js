@@ -94,8 +94,14 @@ const trainers = [
     {
         name: "Mr. Abbas Husain",
         role: "Trainer | Managing Director Teachers’ Development Centre",
-        bio: "With over 30 years of experience, Abbas Husain is a seasoned corporate and educational policy trainer, renowned internationally for his teacher training workshops.",
+        bio: "With over 30 years of experience, Abbas Husain is a seasoned corporate and educational policy trainer. Abbas is renowned internationally for his teacher training workshops across multiple countries. In 2020, he was honored with a Lifetime Achievement Award by the Millennium Institute for Professional Development, Islamabad, presented by Dr. A. Q Khan.",
         image: "/speakers/abbas.png"
+    },
+    {
+        name: "Ms. Benish Sarwar",
+        role: "Trainer | Headmistress PYP Upper Primary, Crescent Model School",
+        bio: "Benish Sarwar is an experienced education professional with over two decades in the field, beginning her career as an early years educator and progressing into leadership roles across primary classes up to Grade VI. Beyond the classroom, she has served as a trainer for Early Years Education (EYE) and Postgraduate Diploma in Education (PGDC) programs, mentoring and inspiring future educators. A dedicated lifelong learner, she actively contributed to the IB authorization process, implementing student-led strategies to strengthen teaching and learning.",
+        image: "/speakers/benish_sarwar.jpeg"
     }
 ];
 
