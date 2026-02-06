@@ -35,7 +35,7 @@ const panelists = [
     {
         name: "Dr. Iain Riley",
         role: "Head of School, TNS Beaconhouse, DHA",
-        bio: "Dr. Iain Riley holds a PhD in Education from University of Glasgow and has over ten years of leadership experience, including Head of School roles in Shanghai. He is a strong advocate for learner agency.",
+        bio: "Dr. Iain Riley is the Head of School at TNS Beaconhouse, DHA Lahore. He holds a PhD in Education from University of Glasgow, Master’s in Educational Leadership, a PGCE, and a BA in History, and has over ten years of leadership experience, including Head of School roles in Shanghai. Having taught across Turkey, Japan, Egypt, and Scotland, Iain is also an IB workshop leader and a strong advocate for learner agency, which he has successfully embedded in his current school.",
         image: "/speakers/iain.png"
     },
     {

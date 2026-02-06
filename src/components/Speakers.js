@@ -120,8 +120,9 @@ const speakers = [
     },
     {
         name: "Dr. Iain Riley",
-        role: "Head of School, TNS Beaconhouse",
-        bio: "Dr. Iain Riley holds a PhD in Education and has over a decade of leadership experience across Turkey, Japan, Egypt, and Scotland. He is a strong advocate for learner agency and progressive school culture.",
+        role: "Trainer & Panelist | Head of School TNS Beaconhouse",
+        bio: "Dr. Iain Riley is the Head of School at TNS Beaconhouse, DHA Lahore. He holds a PhD in Education from University of Glasgow, Master’s in Educational Leadership, a PGCE, and a BA in History, and has over ten years of leadership experience, including Head of School roles in Shanghai. Having taught across Turkey, Japan, Egypt, and Scotland, Iain is also an IB workshop leader and a strong advocate for learner agency, which he has successfully embedded in his current school.",
+        workshop: "PROMOTING SCHOOL CULTURE THROUGH AGENCY",
         image: "/speakers/iain.png"
     },
     {
