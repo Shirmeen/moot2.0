@@ -47,14 +47,14 @@ const panelists = [
     {
         name: "Ms. Asma Amanat",
         role: "General Manager MYP & DP, Crescent Model",
-        bio: "Ms. Asma Amanat is a seasoned IB practitioner, examiner, and workshop leader with 16 years of experience. She is an international academic author and researcher.",
+        bio: "Ms. Asma Amanat has joined Crescent as General Manager of MYP and DP, bringing 16 years of experience in IB education. A seasoned IB practitioner, examiner, and workshop leader, she has played a key role in advancing IB programmes in Punjab. An international academic author, she co-authored Making Sense of Learning (Springer UK), and her research has been featured in the European Journal of Education.",
         image: "/speakers/asma_new.png",
         customClass: "asma-card"
     },
     {
         name: "Ms. Naveen Balkhi",
         role: "Board Director & Executive Coach",
-        bio: "Naveen Balkhi has 27+ years of impact with Boards, educators, and CxOs across 17 countries, focusing on leadership development and sustainable practices.",
+        bio: "Naveen Balkhi, SSGB, ProSci; is a United Nations CSW Speaker, JPMorganChase Wall Street Investment Banker, and Board Director. With 27+ years of impact with Boards, educators, CxOs, youth, and young professionals across 40+ industries and 17 countries, she specializes in Executive Coaching, Leadership Development, ESG-Sustainability, and Women’s Leadership—all deeply rooted in values. She also leads the global initiative Taqwa.Trekkers.",
         image: "/speakers/naveen.png"
     }
 ];

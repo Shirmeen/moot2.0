@@ -14,10 +14,7 @@ const Organizer = () => {
                         <h2>Miss Sofia Qadir Khan</h2>
                         <span className="organizer-title">Principal, Crescent Model Higher Secondary School (Girls Campus)</span>
                         <p className="organizer-bio">
-                            Miss Sofia Qadir Khan is a visionary educational leader committed to fostering a supportive and inclusive environment.
-                            Under her leadership, <strong>Crescent Model Higher Secondary School</strong> continues its 57-year legacy of nurturing talented youth.
-                            Renowned for high educational standards and merit-based admissions, the school builds a strong academic ethos
-                            to produce confident, capable, and value-driven "Crescentarians."
+                            With over two decades of experience in school leadership, educational leadership, and curriculum innovation, including her current role as Principal at Crescent Model Higher Secondary School (Girls Campus) in Lahore, Miss Sofia Qadir Khan leads with empathy, integrity, and a steadfast belief in unlocking each student’s potential. She specializes in educational management, curriculum enhancement, and student-centred learning, with a goal to strengthen academic outcomes while fostering emotional, social, and ethical growth in every student. She is passionate about supporting young women to thrive academically, lead confidently, and engage meaningfully with local and global opportunities.
                         </p>
                     </div>
                 </div>

@@ -33,7 +33,7 @@ const trainers = [
     {
         name: "Ms. Asma Amanat",
         role: "Trainer & Panelist",
-        bio: "Ms. Asma Amanat has joined Crescent as General Manager of MYP and DP, bringing 16 years of experience in IB education. A seasoned IB practitioner and international academic author, her research has been featured in the European Journal of Education.",
+        bio: "Ms. Asma Amanat has joined Crescent as General Manager of MYP and DP, bringing 16 years of experience in IB education. A seasoned IB practitioner, examiner, and workshop leader, she has played a key role in advancing IB programmes in Punjab. An international academic author, she co-authored Making Sense of Learning (Springer UK), and her research has been featured in the European Journal of Education.",
         image: "/speakers/asma_new.png",
         customClass: "asma-card"
     },
@@ -74,7 +74,7 @@ const trainers = [
     {
         name: "Ms. Naveen Balkhi",
         role: "Trainer & Panelist | Board Director",
-        bio: "Naveen Balkhi is a United Nations CSW Speaker and JPMorganChase Wall Street Investment Banker with 27+ years of impact. She specializes in Executive Coaching, Leadership Development, and Women’s Leadership.",
+        bio: "Naveen Balkhi, SSGB, ProSci; is a United Nations CSW Speaker, JPMorganChase Wall Street Investment Banker, and Board Director. With 27+ years of impact with Boards, educators, CxOs, youth, and young professionals across 40+ industries and 17 countries, she specializes in Executive Coaching, Leadership Development, ESG-Sustainability, and Women’s Leadership—all deeply rooted in values. She also leads the global initiative Taqwa.Trekkers.",
         image: "/speakers/naveen.png"
     },
     {
@@ -108,6 +108,12 @@ const trainers = [
         role: "Trainer | Psychologist | Academic Leader & Mental Health Advocate",
         bio: "Dr. Naumana Amjad is an accomplished psychologist with 35+ years in academia and clinical practice. She served as Professor at Punjab University for 27 years before becoming Dean at NUR International University, where she founded Wellbeing Centers and flagship psychology programs. An Annemarie Schimmel Scholar with a PhD in Psychology from the University of Warwick, her work has been published internationally and she has conducted professional trainings nationwide on extremism, gender equity, and workplace safety. Alongside academic work, she leads community mental health initiatives and anti-narcotics advocacy programs. She is fluent in English, Urdu, Punjabi and French.",
         image: "/speakers/naumana_amjad.jpeg"
+    },
+    {
+        name: "Mr. Fazal Niazi",
+        role: "Trainer | Practice Lead and Senior Facilitator, FranklinCovey Education",
+        bio: "Fazal Niazi is a seasoned educator and facilitator with over 35 years of experience in educational leadership and professional development. A Practice Lead and Senior Facilitator at FranklinCovey Education (Pakistan, Türkiye, and Azerbaijan), he has trained 20,000+ educators and leaders nationally and internationally. Founder of The Learning Space, a Reggio Emilia-inspired micro-school in Karachi, he specializes in institutional leadership, faculty capacity building, soft skills, and social-emotional learning, empowering educators to lead with confidence, empathy, and impact.",
+        image: "/speakers/fazal_niazi.jpeg"
     }
 ];
 

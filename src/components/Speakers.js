@@ -25,8 +25,8 @@ const speakers = [
     },
     {
         name: "Ms. Naveen Balkhi",
-        role: "CHRO & Director of Global Talent Management at BSG Advisory",
-        bio: "Naveen Balkhi is recognized for her leadership in HR, strategy, and diversity, and she provides expertise through keynote speeches and leadership development.",
+        role: "Trainer & Panelist | Board Director",
+        bio: "Naveen Balkhi, SSGB, ProSci; is a United Nations CSW Speaker, JPMorganChase Wall Street Investment Banker, and Board Director. With 27+ years of impact with Boards, educators, CxOs, youth, and young professionals across 40+ industries and 17 countries, she specializes in Executive Coaching, Leadership Development, ESG-Sustainability, and Women’s Leadership—all deeply rooted in values. She also leads the global initiative Taqwa.Trekkers.",
         image: "/speakers/naveen.png"
     },
     {
@@ -127,7 +127,7 @@ const speakers = [
     {
         name: "Ms. Asma Amanat",
         role: "GM MYP & DP | Academic Author",
-        bio: "Ms. Asma Amanat is a seasoned IB practitioner and examiner with 16 years of experience. An international academic author, her research has been featured in the European Journal of Education.",
+        bio: "Ms. Asma Amanat has joined Crescent as General Manager of MYP and DP, bringing 16 years of experience in IB education. A seasoned IB practitioner, examiner, and workshop leader, she has played a key role in advancing IB programmes in Punjab. An international academic author, she co-authored Making Sense of Learning (Springer UK), and her research has been featured in the European Journal of Education.",
         image: "/speakers/asma_new.png",
         customClass: "asma-card"
     },
@@ -135,7 +135,7 @@ const speakers = [
         name: "Mr. Todd Shea",
         role: "Founder, CDRS | Global Humanitarian Leader",
         bio: "Todd Shea is a musician turned humanitarian whose life changed after 9/11. Inspired by personal loss and global tragedy, he founded CDRS, leading disaster relief and medical missions worldwide. Todd and his team have responded to earthquakes, floods, tsunamis, hurricanes, and conflict across Pakistan, Haiti, Japan, Sri Lanka, Syria, the Philippines, the US, and beyond; providing healthcare, clean water, shelter, and long term community support.",
-        image: "/speakers/todd_shea.png"
+        image: "/speakers/todd_shea.jpg"
     }
 ];
 
