@@ -21,7 +21,7 @@ function Details() {
       ),
       items: [
         { label: 'Start:', value: 'February 13, 2026 at 9:00 AM' },
-        { label: 'End:', value: 'February 15, 2026 at 4:30 PM' },
+        { label: 'End:', value: 'February 15, 2026 at 2:15 PM' },
         { label: 'Duration:', value: '3 Full Days' },
         { label: 'Policy:', value: 'Access for Registered Attendees' }
       ]

@@ -5,7 +5,7 @@ const trainers = [
     {
         name: "Dr. Syeda Manal Akbar",
         role: "Vice Principal - IB Girls Campus",
-        bio: "Dr. Syeda Manal Akbar is an experienced education leader and Vice Principal of the IB Girls Campus at Crescent Model Higher Secondary School, Lahore. With international experience in the Middle East and the UK, she brings a strong global perspective to IB curriculum leadership.",
+        bio: "Dr. Syeda Manal Akbar is an experienced education leader and Vice Principal of the IB Girls Campus at Crescent Model Higher Secondary School, Lahore. With international experience in the Middle East and the UK, she brings a strong global perspective to IB curriculum leadership. An advocate for inquiry-based learning, inclusive education, and teacher development, she promotes healthy mindsets, psychologically safe learning environments, and student agency, core to the IB philosophy.",
         workshop: "IB PYP in Pakistan vs International PYP Schools: Bridging local context with global practice",
         image: "/speakers/syeda_manal_new.png"
     },
@@ -27,7 +27,7 @@ const trainers = [
     {
         name: "Ms. Amina Amir-ud-Din Chughtai",
         role: "Trainer",
-        bio: "Amina holds a PGCEi from Canterbury Christchurch University, UK, and a certificate in SUSI from California State University, USA. She is an accredited Cambridge International Trainer for Enrichment Programmes and a Cambridge PDQ programme leader with over 23 years of experience in teaching and training.",
+        bio: "Amina holds a PGCEi from Canterbury Christchurch University, UK, and a certificate in SUSI from California State University, USA. She is an accredited Cambridge International Trainer for Enrichment Programmes and a Cambridge PDQ programme leader. With over 23 years of experience in teaching and training both nationally and internationally, Amina has also worked with NCC-SNC Pakistan for the English curriculum and taught at various institutions, and levels from Primary till PHD, including Civil Services Academy Pakistan. She holds degrees in English Literature, Applied Linguistics, and Educational Planning and Management. She is a US Alumni Pakistan member and an alumnus of Rotary International Group Study Exchange scholarship.",
         image: "/speakers/amina_new.png"
     },
     {
@@ -40,7 +40,7 @@ const trainers = [
     {
         name: "Ms. Tina Hameed",
         role: "Trainer & Panelist",
-        bio: "Tina Hameed is the founding Director of the Teaching and Learning Centre (TLC) at Aitchison College. She has been teaching and training for 37 years and is an accredited tutor from the University of Bradford.",
+        bio: "Tina Hameed is the founding Director of the Teaching and Learning Centre (TLC) at Aitchison College and has been teaching and training for 37 years. She has an M.Ed. from the University of Exeter, UK, and is an accredited tutor from the University of Bradford and University College Plymouth St Mark and St John, UK.",
         workshop: "Learning that Lasts",
         image: "/speakers/tina.png"
     },
@@ -80,7 +80,7 @@ const trainers = [
     {
         name: "Ms. Tayyabah Amer Malik",
         role: "Trainer | Executive Manager K–8 Education",
-        bio: "Tayyabah Amer Malik is a seasoned educational leader at Pak-Turk Maarif International Schools. She specializes in curriculum leadership and school improvement, leading large-scale professional development programs.",
+        bio: "With over two decades of international experience across Pakistan, Malaysia, the UAE, and the USA, Tayyabah Amer Malik is a seasoned educational leader currently serving as Executive Manager K–8 Education at Pak-Turk Maarif International Schools & Colleges. A certified IB Head of School for PYP and MYP, she specializes in curriculum leadership, school improvement, and large-scale professional development, leading evidence-based initiatives and international teacher training programmes in collaboration with global institutions.",
         workshop: "From Learning Theories to IB Practice: Why We Teach the Way We Teach",
         image: "/speakers/tayyabah.png"
     },
@@ -100,7 +100,7 @@ const trainers = [
     {
         name: "Ms. Benish Sarwar",
         role: "Trainer | Headmistress PYP Upper Primary, Crescent Model School",
-        bio: "Benish Sarwar is an experienced education professional with over two decades in the field, beginning her career as an early years educator and progressing into leadership roles across primary classes up to Grade VI. Beyond the classroom, she has served as a trainer for Early Years Education (EYE) and Postgraduate Diploma in Education (PGDC) programs, mentoring and inspiring future educators. A dedicated lifelong learner, she actively contributed to the IB authorization process, implementing student-led strategies to strengthen teaching and learning.",
+        bio: "Ms. Benish Sarwar | M.Sc Statistics | M. Phil in Educational Leadership and Management | Masters in Education in reference to IB PYP (online) | NPQH. Benish Sarwar is an experienced education professional with over two decades in the field, beginning her career as an early years educator and progressing into leadership roles across primary classes up to Grade VI. Beyond the classroom, she has served as a trainer for Early Years Education (EYE) and Postgraduate Diploma in Education (PGDC) programs, mentoring and inspiring future educators. She has continually pursued professional growth through workshops in Assessment for Learning (AfL), integrating science through language, child rights and protection, and academic writing and publishing. A dedicated lifelong learner, she actively contributed to the IB authorization process, implementing student-led strategies to strengthen teaching and learning.",
         image: "/speakers/benish_sarwar.jpeg"
     },
     {
@@ -112,7 +112,7 @@ const trainers = [
     {
         name: "Mr. Fazal Niazi",
         role: "Trainer | Practice Lead and Senior Facilitator, FranklinCovey Education",
-        bio: "Fazal Niazi is a seasoned educator and facilitator with over 35 years of experience in educational leadership and professional development. A Practice Lead and Senior Facilitator at FranklinCovey Education (Pakistan, Türkiye, and Azerbaijan), he has trained 20,000+ educators and leaders nationally and internationally. Founder of The Learning Space, a Reggio Emilia-inspired micro-school in Karachi, he specializes in institutional leadership, faculty capacity building, soft skills, and social-emotional learning, empowering educators to lead with confidence, empathy, and impact.",
+        bio: "Fazal Niazi is a seasoned educator and facilitator with over 35 years of experience in educational leadership and professional development. A Practice Lead and Senior Facilitator at FranklinCovey Education (Pakistan, Türkiye, and Azerbaijan), he has trained 20,000+ educators and leaders nationally and internationally. Founder of The Learning Space, a Reggio Emilia–inspired micro-school in Karachi, he specializes in institutional leadership, faculty capacity building, soft skills, and social-emotional learning, empowering educators to lead with confidence, empathy, and impact.",
         image: "/speakers/fazal_niazi.jpeg"
     }
 ];

@@ -11,6 +11,7 @@ import Contact from './components/Contact';
 import Registration from './components/Registration';
 import Speakers from './components/Speakers';
 import Trainers from './components/Trainers';
+import Moderators from './components/Moderators';
 import Panelists from './components/Panelists';
 import Footer from './components/Footer';
 import './App.css';
@@ -74,6 +75,7 @@ function App() {
       <Speakers />
       <Trainers />
       <Panelists />
+      <Moderators />
       <Registration />
       <Location />
       <Contact />
