@@ -10,12 +10,7 @@ const trainers = [
         image: "/speakers/syeda_manal_new.png"
     },
 
-    {
-        name: "Ms. Farah Masood",
-        role: "Panelist | Head of School - Learning Alliance International",
-        bio: "Farah Masood is a seasoned IB practitioner and accomplished school leader with over three decades of experience. As Head of School at Learning Alliance International, she has led diverse academic teams and served as Chairperson of the Executive Committee of IBPAK from 2023 to 2025.",
-        image: "/speakers/farah_masood_new.png"
-    },
+
     {
         name: "Mr. Taimur K Bandey",
         role: "Trainer & Panelist | Head of School Trinity School",
@@ -65,12 +60,7 @@ const trainers = [
         workshop: "From Transdisciplinary to Interdisciplinary Learning in the IB Continuum: Understanding and Implementing Interdisciplinary Teaching in the MYP",
         image: "/speakers/fatima_ali_new.png"
     },
-    {
-        name: "Mr. Jazib Zahir",
-        role: "Educationist and Entrepreneur",
-        bio: "Mr. Jazib is the Director of the LUMS Center for Entrepreneurship and LUMSx the online learning platform. His work experience spans managing software teams for organizations like Sesame Workshop and BBC, bringing solar energy to Pakistan and working with think tanks and investors in education. His AI experience includes conducting trainings for schools across Pakistan and training global organizations like Coca Cola and Hewlett Packard. He has a BS Electrical Engineering from Stanford and an Ed.M. Technology, Innovation and Education from Harvard.",
-        image: "/speakers/jazib_zahir_new.png"
-    },
+
     {
         name: "Ms. Naveen Balkhi",
         role: "Trainer & Panelist | Board Director",
@@ -84,13 +74,7 @@ const trainers = [
         workshop: "From Learning Theories to IB Practice: Why We Teach the Way We Teach",
         image: "/speakers/tayyabah.png"
     },
-    {
-        name: "Dr. Shireen Naqvi",
-        role: "Trainer | Workshop Facilitator & Coach",
-        bio: "Dr. Shireen Naqvi is a highly respected figure in diversity and inclusion. Founder of the School of Leadership, she has worked with over 300 organizations and has received multiple awards for her impact on professional development.",
-        workshop: "Empowering Explorers: Nurturing Student Autonomy",
-        image: "/speakers/shireen.png"
-    },
+
     {
         name: "Mr. Abbas Husain",
         role: "Trainer | Managing Director Teachers’ Development Centre",

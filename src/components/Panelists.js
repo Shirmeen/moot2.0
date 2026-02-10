@@ -26,37 +26,7 @@ const panelists = [
         bio: "Farah Masood is a seasoned IB practitioner and accomplished school leader with over three decades of experience in education. As Head of School at Learning Alliance International, an IB Continuum School, she has led diverse academic teams, developed teacher leadership, and contributed significantly to the growth of IB education. Her leadership impact extended nationally through her role on the Executive Committee of IBPAK, where she served as Chairperson from 2023 to 2025.",
         image: "/speakers/farah_masood_new.png"
     },
-    {
-        name: "Mr. Taimur K Bandey",
-        role: "TRAINER & PANELIST | Head of School, Trinity School",
-        bio: "Taimur K Bandey is Head of School at Trinity (IB, Cambridge and American High School), Lahore. He is an IB consultant with extensive experience in establishing IB programmes across schools in Pakistan and has contributed to the education sector for over 25 years. He is Former president of the debating society of Pakistan and is also an advisor to a leading Ed tech company. He is a former member of the national commission for curriculum development for the Government of Pakistan.",
-        image: "/speakers/taimur_new.png"
-    },
-    {
-        name: "Dr. Iain Riley",
-        role: "TRAINER & PANELIST | Head of School, TNS Beaconhouse, DHA",
-        bio: "Dr. Iain Riley is the Head of School at TNS Beaconhouse, DHA Lahore. He holds a PhD in Education from University of Glasgow, Master’s in Educational Leadership, a PGCE, and a BA in History, and has over ten years of leadership experience, including Head of School roles in Shanghai. Having taught across Turkey, Japan, Egypt, and Scotland, Iain is also an IB workshop leader and a strong advocate for learner agency, which he has successfully embedded in his current school.",
-        image: "/speakers/iain.png"
-    },
-    {
-        name: "Ms. Tina Hameed",
-        role: "TRAINER & PANELIST | Director, Teaching and Learning Centre, Aitchison College",
-        bio: "Tina Hameed is the founding Director of the Teaching and Learning Centre (TLC) at Aitchison College and has been teaching and training for 37 years. She has an M.Ed. from the University of Exeter, UK, and is an accredited tutor from the University of Bradford and University College Plymouth St Mark and St John, UK.",
-        image: "/speakers/tina.png"
-    },
-    {
-        name: "Ms. Asma Amanat",
-        role: "TRAINER & PANELIST | General Manager MYP & DP, Crescent Model",
-        bio: "Ms. Asma Amanat has joined Crescent as General Manager of MYP and DP, bringing 16 years of experience in IB education. A seasoned IB practitioner, examiner, and workshop leader, she has played a key role in advancing IB programmes in Punjab. An international academic author, she co-authored Making Sense of Learning (Springer UK), and her research has been featured in the European Journal of Education.",
-        image: "/speakers/asma_new.png",
-        customClass: "asma-card"
-    },
-    {
-        name: "Ms. Naveen Balkhi",
-        role: "TRAINER & PANELIST | Board Director & Executive Coach",
-        bio: "Naveen Balkhi, SSGB, ProSci; is a United Nations CSW Speaker, JPMorganChase Wall Street Investment Banker, and Board Director. With 27+ years of impact with Boards, educators, CxOs, youth, and young professionals across 40+ industries and 17 countries, she specializes in Executive Coaching, Leadership Development, ESG-Sustainability, and Women’s Leadership—all deeply rooted in values. She also leads the global initiative Taqwa.Trekkers.",
-        image: "/speakers/naveen.png"
-    },
+
     {
         name: "Qurat-ul-Ain Idrees",
         role: "PANELIST | Area Education Manager, TCF | LUMS Alumna",
