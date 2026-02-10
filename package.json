@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Event website for Crescent Academia Moot 2.0 built with React",
   "private": true,
+  "homepage": ".",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
