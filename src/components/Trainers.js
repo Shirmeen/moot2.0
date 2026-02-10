@@ -7,7 +7,8 @@ const trainers = [
         role: "Vice Principal - IB Girls Campus",
         bio: "Dr. Syeda Manal Akbar is an experienced education leader and Vice Principal of the IB Girls Campus at Crescent Model Higher Secondary School, Lahore. With international experience in the Middle East and the UK, she brings a strong global perspective to IB curriculum leadership. An advocate for inquiry-based learning, inclusive education, and teacher development, she promotes healthy mindsets, psychologically safe learning environments, and student agency, core to the IB philosophy.",
         workshop: "IB PYP in Pakistan vs International PYP Schools: Bridging local context with global practice",
-        image: "/speakers/syeda_manal_new.png"
+        image: "/speakers/syeda_manal_new.jpeg",
+        customClass: "manal-card"
     },
 
 

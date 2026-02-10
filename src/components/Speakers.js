@@ -84,7 +84,7 @@ const speakers = [
         image: "/speakers/rabia_najam.jpeg"
     },
     {
-        name: "Ms. Khadija Balkhi",
+        name: "Ms. Khadeeja Balkhi",
         role: "Director, Global Sustainability",
         bio: "An award-winning thought leader and trusted advisor to boards & C-Suite, Khadeeja is a partner to front-line teams, youth & leaders alike. Contributing across corporate, gov., education, and nonprofit sectors for 21+ years, her work has supported entities including The Lyceum School, GRI, Coca-Cola, OMV, National Foods, ICI, Puma, WWF & others. She has published 400+ articles, covers, and book chapters in international publications including Forbes, Newsweek, Arab News, The National, Herald, and Saudi Gazette.",
         image: "/speakers/khadija_balkhi.jpeg"
