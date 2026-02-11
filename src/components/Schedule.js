@@ -12,57 +12,11 @@ const Schedule = () => {
         }
     };
 
-    const day1Events = [
-        { time: "8:00 am – 9:00 am", segment: "Registration & guests to be seated" },
-        { time: "9:00 am – 9:10 am", segment: "Inauguration (Recitation, Anthem)" },
-        { time: "9:10 am – 9:20 am", segment: "Welcome Note" },
-        { time: "9:20 am – 9:45 am", segment: "Keynote Speech" },
-        { time: "9:45 am – 9:50 am", segment: "Video Message" },
-        { time: "9:50 am – 10:35 am", segment: "Panel Discussion: How to build School wide ATL culture" },
-        { time: "10:35 am – 10:50 am", segment: "Presentation: Empowering Students as Change makers (Agency in action)" },
-        { time: "10:50 am – 11:00 am", segment: "IB Success Story of Crescent" },
-        { time: "11:00 am – 11:30 am", segment: "TEA BREAK" },
-        { time: "11:30 am – 1:15 pm", segment: "IB Training Sessions" },
-        { time: "1:15 pm – 2:15 pm", segment: "LUNCH" },
-        { time: "2:15 pm – 2:30 pm", segment: "IB Pak" },
-        { time: "2:30 pm – 2:40 pm", segment: "Video Message" },
-        { time: "2:40 pm – 2:55 pm", segment: "Empowering Students as Change makers (Agency in Action)" },
-        { time: "2:55 pm – 4:00 pm", segment: "Speaker Session" },
-        { time: "4:00 pm – 4:15 pm", segment: "Plenary" },
-        { time: "4:15 pm – 4:30 pm", segment: "Souvenirs / Group Photo" }
-    ];
+    const day1Events = [];
 
-    const day2Events = [
-        { time: "8:00 am – 9:00 am", segment: "Registration & guests to be seated" },
-        { time: "9:00 am – 9:10 am", segment: "Inauguration (Recitation, Anthem)" },
-        { time: "9:10 am – 9:20 am", segment: "Welcome Note" },
-        { time: "9:20 am – 9:50 am", segment: "Keynote Speech" },
-        { time: "9:50 am – 10:30 am", segment: "Panel Discussion: Leading Academic Change for Gen Z and Gen Alpha" },
-        { time: "10:30 am – 10:40 am", segment: "Video message" },
-        { time: "10:40 am – 11:00 am", segment: "Speech" },
-        { time: "11:00 am – 11:20 am", segment: "TEA" },
-        { time: "11:20 am – 12:10 pm", segment: "Training Session 1" },
-        { time: "12:10 pm – 12:45 pm", segment: "Interactive Session (Science)" },
-        { time: "12:45 pm – 1:00 pm", segment: "Paper presentation & Souvenirs" },
-        { time: "1:00 pm – 1:45 pm", segment: "LUNCH" },
-        { time: "1:45 pm – 2:35 pm", segment: "Training Session 2" },
-        { time: "2:35 pm – 4:15 pm", segment: "Workshop" },
-        { time: "4:15 pm – 4:30 pm", segment: "Plenary / Souvenir" }
-    ];
+    const day2Events = [];
 
-    const day3Events = [
-        { time: "8:00 am – 9:00 am", segment: "Registration & guests to be seated" },
-        { time: "9:00 am – 9:15 am", segment: "Inauguration (Recitation, Anthem / Welcome Note)" },
-        { time: "9:15 am – 9:35 am", segment: "Keynote Speech" },
-        { time: "9:35 am – 10:20 am", segment: "Panel: Changing the landscape of Education (challenges & solutions)" },
-        { time: "10:20 am – 11:00 am", segment: "Speech" },
-        { time: "11:00 am – 11:20 am", segment: "TEA" },
-        { time: "11:20 am – 12:00 pm", segment: "Alumni Spotlight: Journeys of Success" },
-        { time: "12:00 pm – 12:15 pm", segment: "Compassion" },
-        { time: "12:15 pm – 12:45 pm", segment: "Sustainability" },
-        { time: "12:45 pm – 1:15 pm", segment: "Sum up of Conference (Thank you note & Conclusion)" },
-        { time: "1:15 pm – 2:15 pm", segment: "LUNCH" }
-    ];
+    const day3Events = [];
 
     return (
         <section id="schedule" className="schedule-section">
@@ -94,7 +48,7 @@ const Schedule = () => {
                                 <div className="card-header">
                                     <span className="time-tag">08:00 AM - 04:30 PM</span>
                                     <div className="session-type-label">FACILITATION & KEYNOTE</div>
-                                    <div className="expand-hint">{expandedDay === 1 ? 'Click to Close −' : 'View Full Schedule +'}</div>
+
                                 </div>
                                 <div className="card-body">
                                     <h3>Friday, February 13, 2026</h3>
@@ -135,7 +89,7 @@ const Schedule = () => {
                                 <div className="card-header">
                                     <span className="time-tag">08:00 AM - 04:30 PM</span>
                                     <div className="session-type-label">INNOVATION & RESEARCH</div>
-                                    <div className="expand-hint">{expandedDay === 2 ? 'Click to Close −' : 'View Full Schedule +'}</div>
+
                                 </div>
                                 <div className="card-body">
                                     <h3>Saturday, February 14, 2026</h3>
@@ -176,7 +130,7 @@ const Schedule = () => {
                                 <div className="card-header">
                                     <span className="time-tag">08:00 AM - 02:15 PM</span>
                                     <div className="session-type-label">EDUCATION FOR ALL</div>
-                                    <div className="expand-hint">{expandedDay === 3 ? 'Click to Close −' : 'View Full Schedule +'}</div>
+
                                 </div>
                                 <div className="card-body">
                                     <h3>Sunday, February 15, 2026</h3>
