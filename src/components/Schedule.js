@@ -44,7 +44,7 @@ const Schedule = () => {
                     <div className={`day-block day-1 animate-up delay-1 ${expandedDay === 1 ? 'is-expanded' : ''}`}>
                         <div className="day-label animate-pulse-soft">Day 01</div>
                         <div className="day-content-grid single-col">
-                            <div className="schedule-card clickable" onClick={() => toggleDay(1)}>
+                            <div className="schedule-card">
                                 <div className="card-header">
                                     <span className="time-tag">08:00 AM - 04:30 PM</span>
                                     <div className="session-type-label">FACILITATION & KEYNOTE</div>
@@ -55,28 +55,6 @@ const Schedule = () => {
                                     <p className="schedule-highlight">Leading Learning the IB way</p>
                                 </div>
 
-                                {expandedDay === 1 && (
-                                    <div className="day-details-slider animate-down">
-                                        <div className="table-responsive">
-                                            <table className="schedule-table">
-                                                <thead>
-                                                    <tr>
-                                                        <th>Time</th>
-                                                        <th>Segment</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    {day1Events.map((event, index) => (
-                                                        <tr key={index}>
-                                                            <td className="time-cell">{event.time}</td>
-                                                            <td className="segment-cell">{event.segment}</td>
-                                                        </tr>
-                                                    ))}
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                )}
                             </div>
                         </div>
                     </div>
@@ -85,7 +63,7 @@ const Schedule = () => {
                     <div className={`day-block day-2 animate-up delay-2 ${expandedDay === 2 ? 'is-expanded' : ''}`}>
                         <div className="day-label animate-pulse-soft">Day 02</div>
                         <div className="day-content-grid single-col">
-                            <div className="schedule-card clickable" onClick={() => toggleDay(2)}>
+                            <div className="schedule-card">
                                 <div className="card-header">
                                     <span className="time-tag">08:00 AM - 04:30 PM</span>
                                     <div className="session-type-label">INNOVATION & RESEARCH</div>
@@ -96,28 +74,6 @@ const Schedule = () => {
                                     <p className="schedule-highlight">ED Research: Innovation, Insights, Impact</p>
                                 </div>
 
-                                {expandedDay === 2 && (
-                                    <div className="day-details-slider animate-down">
-                                        <div className="table-responsive">
-                                            <table className="schedule-table">
-                                                <thead>
-                                                    <tr>
-                                                        <th>Time</th>
-                                                        <th>Segment</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    {day2Events.map((event, index) => (
-                                                        <tr key={index}>
-                                                            <td className="time-cell">{event.time}</td>
-                                                            <td className="segment-cell">{event.segment}</td>
-                                                        </tr>
-                                                    ))}
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                )}
                             </div>
                         </div>
                     </div>
@@ -126,7 +82,7 @@ const Schedule = () => {
                     <div className={`day-block day-3 animate-up delay-3 ${expandedDay === 3 ? 'is-expanded' : ''}`}>
                         <div className="day-label animate-pulse-soft">Day 03</div>
                         <div className="day-content-grid single-col">
-                            <div className="schedule-card clickable" onClick={() => toggleDay(3)}>
+                            <div className="schedule-card">
                                 <div className="card-header">
                                     <span className="time-tag">08:00 AM - 02:15 PM</span>
                                     <div className="session-type-label">EDUCATION FOR ALL</div>
@@ -137,28 +93,6 @@ const Schedule = () => {
                                     <p className="schedule-highlight">Education for All</p>
                                 </div>
 
-                                {expandedDay === 3 && (
-                                    <div className="day-details-slider animate-down">
-                                        <div className="table-responsive">
-                                            <table className="schedule-table">
-                                                <thead>
-                                                    <tr>
-                                                        <th>Time</th>
-                                                        <th>Segment</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    {day3Events.map((event, index) => (
-                                                        <tr key={index}>
-                                                            <td className="time-cell">{event.time}</td>
-                                                            <td className="segment-cell">{event.segment}</td>
-                                                        </tr>
-                                                    ))}
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                )}
                             </div>
                         </div>
                     </div>
