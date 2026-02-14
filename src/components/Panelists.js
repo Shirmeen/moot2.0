@@ -30,7 +30,7 @@ const panelists = [
     {
         name: "Qurat-ul-Ain Idrees",
         role: "PANELIST | Area Education Manager, TCF | LUMS Alumna",
-        bio: "Qurat-ul-Ain Idrees is an experienced education professional currently serving as an Area Education Manager at The Citizens Foundation (TCF). She provides academic leadership and manages a cohort of school principals to ensure educational standards are met. She is an alumna of the Lahore University of Management Sciences (LUMS) and has significant experience in corporate communications, project management, and fundraising.",
+        bio: "Qurat-ul-Ain Idrees is the Head of Education Excellence at The Citizens Foundation (TCF), where she leads academic quality and capacity-building initiatives across regions. She works closely with education leadership teams to strengthen school leadership, teaching practices, assessment systems, and learning outcomes at scale. Her work focuses on translating educational vision into effective classroom practice, with a strong emphasis on equity, instructional quality, and continuous improvement.",
         image: "/speakers/qurat_ul_ain.png"
     }
 ];
